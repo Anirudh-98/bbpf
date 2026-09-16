@@ -17,7 +17,6 @@ export default function HeroSection() {
           muted
           loop
           playsInline
-          poster="/images/hero-wheat.jpg"
           className="h-full w-full object-cover object-center"
         >
           <source src="/videos/background.mp4" type="video/mp4" />
