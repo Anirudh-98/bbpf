@@ -5,6 +5,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import IntroLoader from "@/components/IntroLoader";
 import { siteUrl } from "@/data/site";
 
 const fraunces = Fraunces({
@@ -40,6 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${fraunces.variable} ${manrope.variable}`}>
       <body className="min-h-screen bg-white text-charcoal">
+        <IntroLoader />
         <SmoothScroll />
         <div className="flex min-h-screen w-full flex-col">
           <Nav />
