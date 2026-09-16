@@ -1,6 +1,6 @@
 import NextLink from "next/link";
 import Image from "next/image";
-import { ArrowDown, ArrowUpRight, Trees, Droplets, Sprout, BookOpen, HeartPulse, CheckCircle2 } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Compass, Sprout, Wheat, Users, TrendingUp, Infinity as InfinityIcon, CheckCircle2 } from "lucide-react";
 import Eyebrow from "@/components/Eyebrow";
 import ButtonPair from "@/components/ButtonPair";
 import Stepper from "@/components/Stepper";
@@ -19,31 +19,37 @@ import HeroSection from "@/components/HeroSection";
 const steps = [
   {
     number: "01",
+    icon: Compass,
     title: "Understand the Village",
     body: "Study its geography, agriculture, water systems and needs.",
   },
   {
     number: "02",
+    icon: Sprout,
     title: "Restore the Natural Foundation",
     body: "Soil, water, trees, biodiversity.",
   },
   {
     number: "03",
+    icon: Wheat,
     title: "Strengthen Agriculture",
     body: "Support farmers moving to natural farming.",
   },
   {
     number: "04",
+    icon: Users,
     title: "Strengthen People",
     body: "Invest in education, health and knowledge.",
   },
   {
     number: "05",
+    icon: TrendingUp,
     title: "Strengthen Livelihoods",
     body: "Build economic resilience through productive farming.",
   },
   {
     number: "06",
+    icon: InfinityIcon,
     title: "Build Self-Sustainability",
     body: "A village capable of sustaining its own future.",
   },
@@ -207,26 +213,38 @@ export default function HomePage() {
       {/* 10. Tradition & Ancient Wisdom Strip */}
       <section className="section bg-stone-50/70 border-y border-stone-200/80">
         <div className="container-content">
-          <Reveal className="mx-auto max-w-3xl text-center">
-            <Eyebrow>Parampara</Eyebrow>
-            <h2 className="mt-4 text-3xl font-bold tracking-tight text-forest md:text-5xl">
-              Ancient Wisdom. <span className="accent">Contemporary</span>{" "}
-              Responsibility.
-            </h2>
-            <p className="body-copy mt-6 text-base md:text-lg leading-relaxed text-stone-600">
-              Traditional knowledge can provide the principles — natural farming,
-              soil stewardship, water conservation, Ayurveda. Modern tools can
-              provide the means — planning, monitoring, education, data. BPPF brings
-              the two together.
-            </p>
-            <div className="mt-8">
-              <NextLink
-                href="/about#philosophy"
-                className="group inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white px-7 py-3 text-sm font-bold text-forest shadow-sm transition-all hover:bg-stone-50 hover:border-stone-400"
-              >
-                <span>Read Our Philosophy</span>
-                <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </NextLink>
+          <Reveal className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-12">
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2.5rem] border border-stone-200/80 shadow-lifted">
+              <Image
+                src="/images/farmer-landscape.jpg"
+                alt="Rural village landscape rooted in Parampara"
+                fill
+                sizes="(max-width: 768px) 100vw, 480px"
+                className="object-cover"
+              />
+            </div>
+
+            <div className="text-center md:text-left">
+              <Eyebrow>Parampara</Eyebrow>
+              <h2 className="mt-4 text-3xl font-bold tracking-tight text-forest md:text-5xl">
+                Ancient Wisdom. <span className="accent">Contemporary</span>{" "}
+                Responsibility.
+              </h2>
+              <p className="body-copy mt-6 text-base md:text-lg leading-relaxed text-stone-600">
+                Traditional knowledge can provide the principles — natural farming,
+                soil stewardship, water conservation, Ayurveda. Modern tools can
+                provide the means — planning, monitoring, education, data. BPPF brings
+                the two together.
+              </p>
+              <div className="mt-8 flex justify-center md:justify-start">
+                <NextLink
+                  href="/about#philosophy"
+                  className="group inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white px-7 py-3 text-sm font-bold text-forest shadow-sm transition-all hover:bg-stone-50 hover:border-stone-400"
+                >
+                  <span>Read Our Philosophy</span>
+                  <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </NextLink>
+              </div>
             </div>
           </Reveal>
         </div>

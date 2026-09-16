@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Compass, Sprout, Wheat, Users, TrendingUp, Infinity as InfinityIcon } from "lucide-react";
 import Eyebrow from "@/components/Eyebrow";
 import EcosystemDiagram from "@/components/EcosystemDiagram";
 import Stepper from "@/components/Stepper";
@@ -13,31 +14,37 @@ export const metadata: Metadata = {
 const steps = [
   {
     number: "01",
+    icon: Compass,
     title: "Understand the Village",
     body: "Every village has its own geography, water table, agricultural practices, social structure and challenges. We begin by studying the local context before proposing any intervention.",
   },
   {
     number: "02",
+    icon: Sprout,
     title: "Restore the Natural Foundation",
     body: "Focus on soil health, water sources, tree cover and biodiversity — the physical base every other outcome depends on.",
   },
   {
     number: "03",
+    icon: Wheat,
     title: "Strengthen Agriculture",
     body: "Support farmers transitioning from chemical to natural farming, improving both yield quality and long-term soil health.",
   },
   {
     number: "04",
+    icon: Users,
     title: "Strengthen People",
     body: "Invest in education and health — because a resilient village needs capable, healthy people as much as it needs healthy land.",
   },
   {
     number: "05",
+    icon: TrendingUp,
     title: "Strengthen Livelihoods",
     body: "Build economic resilience through productive, sustainable agricultural activity that supports families directly.",
   },
   {
     number: "06",
+    icon: InfinityIcon,
     title: "Build Self-Sustainability",
     body: "The goal is not permanent dependence on outside support — it's a village increasingly capable of sustaining its own people, resources and future.",
   },
