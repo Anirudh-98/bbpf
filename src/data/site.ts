@@ -36,4 +36,8 @@ export const contactInfo = {
   instagram: { label: "@indiabppf", href: "https://www.instagram.com/indiabppf" },
   facebook: { label: "Facebook", href: "#" },
   cin: "U85300TG2022NPL167836",
+  // TODO: replace with BPPF's real WhatsApp business number (include country code, digits only).
+  whatsappNumber: "919999999999",
 };
+
+export const siteUrl = "https://www.bppfindia.org";

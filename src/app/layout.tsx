@@ -4,6 +4,8 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import { siteUrl } from "@/data/site";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -21,6 +23,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Bharathiya Parampara Prathistan Foundation",
     template: "%s | BPPF",
@@ -43,6 +46,7 @@ export default function RootLayout({
           <main className="flex-1 w-full">{children}</main>
           <Footer />
         </div>
+        <WhatsAppButton />
       </body>
     </html>
   );

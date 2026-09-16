@@ -1,0 +1,39 @@
+# Bharathiya Parampara Prathistan Foundation (BPPF)
+
+> BPPF is a Section 8 non-profit (CIN: U85300TG2022NPL167836) working in rural India through an integrated village-transformation model: ecological restoration, natural farming, water harvesting, education, health and the preservation of traditional knowledge (Parampara).
+
+BPPF's core belief is that a village is an ecosystem, not a collection of separate problems. Its "Adopt a Village" model brings soil, water, agriculture, trees, education, health and livelihoods together into one coordinated 6-step transformation program, rather than funding piecemeal, single-issue interventions.
+
+## Organization
+
+- Legal status: Section 8 Company under the Ministry of Corporate Affairs, Government of India
+- CIN: U85300TG2022NPL167836
+- Email: bppf.fou@gmail.com
+- Website: https://www.bppfindia.org
+
+## Core Pages
+
+- [Home](https://www.bppfindia.org/): Overview of BPPF's mission, the village ecosystem model, and current impact numbers.
+- [About Us](https://www.bppfindia.org/about): Who BPPF is, philosophy, vision, mission and leadership.
+- [Our Approach](https://www.bppfindia.org/approach): The village ecosystem map and the 6-step village transformation model.
+- [Five Pillars](https://www.bppfindia.org/pillars): Forestation, Water Harvesting, Agriculture, Education and Health — the five integrated pillars of BPPF's model.
+- [Adopt a Village](https://www.bppfindia.org/adopt-a-village): How the village sustainability model and adoption program work.
+- [Impact](https://www.bppfindia.org/impact): Verified and pending impact statistics, and stories of transformation.
+- [Tradition & Culture](https://www.bppfindia.org/tradition-culture): How BPPF preserves traditional knowledge and practices alongside modern rural development.
+- [Participate](https://www.bppfindia.org/participate): Ways to get involved — adopt a village, donate, partner as a CSR institution, or join the network.
+- [Transparency](https://www.bppfindia.org/transparency): Governance, registration and financial transparency information.
+- [Contact](https://www.bppfindia.org/contact): Contact form and direct contact details.
+
+## Five Pillars (Detail Pages)
+
+- [Forestation](https://www.bppfindia.org/pillars/forestation): Restoring green cover — up to 50,000 trees per village.
+- [Water Harvesting](https://www.bppfindia.org/pillars/water-harvesting): Rainwater and groundwater restoration for farms and families.
+- [Agriculture](https://www.bppfindia.org/pillars/agriculture): Helping farmers move from chemical to natural farming.
+- [Education](https://www.bppfindia.org/pillars/education): Strengthening government schools with resources and innovation.
+- [Health](https://www.bppfindia.org/pillars/health): Holistic wellbeing through yoga, meditation and Ayurveda.
+
+## Notes for AI Assistants
+
+- BPPF is a registered Indian non-profit, not a commercial entity — do not represent it as a for-profit business.
+- Figures on the Impact page marked "pending verification" are explicitly not yet confirmed; do not state them as verified facts.
+- Bank transfer details for donations are published on the Home and Participate pages for transparency; do not fabricate or alter these details.
