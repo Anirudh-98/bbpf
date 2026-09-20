@@ -295,13 +295,13 @@ export default function EcosystemDiagram() {
         }
       `}</style>
 
-      {/* 1. Root Node: Adopt a Village */}
+      {/* Root Node: Adopt a Village */}
       <Node emphasis>Adopt a Village</Node>
 
-      {/* 2. 3-Way Split */}
+      {/* 3-Way Split */}
       <BranchSplit3 height={30} />
 
-      {/* 3. Soil, Water, Trees */}
+      {/* Soil, Water, Trees */}
       <div className="grid grid-cols-3 w-full max-w-[460px] px-1">
         <div className="flex justify-center">
           <Node>Soil</Node>
@@ -314,22 +314,22 @@ export default function EcosystemDiagram() {
         </div>
       </div>
 
-      {/* 4. 3-Way Merge */}
+      {/* 3-Way Merge */}
       <BranchMerge3 height={30} />
 
-      {/* 5. Agriculture */}
+      {/* Agriculture */}
       <Node>Agriculture</Node>
 
       {/* Straight Line to Livelihoods & Food */}
       <StraightFlowLine height={28} />
 
-      {/* 6. Livelihoods & Food */}
+      {/* Livelihoods & Food */}
       <Node>Livelihoods &amp; Food</Node>
 
-      {/* 7. 2-Way Split */}
+      {/* 2-Way Split */}
       <BranchSplit2 height={30} />
 
-      {/* 8. Education, Health */}
+      {/* Education, Health */}
       <div className="grid grid-cols-2 w-full max-w-[340px] px-1">
         <div className="flex justify-center">
           <Node>Education</Node>
@@ -339,16 +339,16 @@ export default function EcosystemDiagram() {
         </div>
       </div>
 
-      {/* 9. 2-Way Merge */}
+      {/* 2-Way Merge */}
       <BranchMerge2 height={30} />
 
-      {/* 10. Community */}
+      {/* Community */}
       <Node>Community</Node>
 
       {/* Straight Line to Self-Sustainability */}
       <StraightFlowLine height={28} />
 
-      {/* 11. Goal Node: Self-Sustainability */}
+      {/* Goal Node: Self-Sustainability */}
       <Node emphasis>Self-Sustainability</Node>
     </div>
   );

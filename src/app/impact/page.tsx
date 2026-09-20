@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import Eyebrow from "@/components/Eyebrow";
 import StatBlock, { type Stat } from "@/components/StatBlock";
-import StoryCard from "@/components/StoryCard";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "Impact",
   description:
-    "BPPF's impact dashboard and stories of transformation from the villages we work with.",
+    "BPPF's impact dashboard: the figures we have verified so far, and the ones still pending verification.",
 };
 
 const stats: Stat[] = [
@@ -41,26 +40,6 @@ export default function ImpactPage() {
           </Reveal>
         </div>
       </section>
-
-      {/* <section className="section-sm bg-stone-50/70 border-y border-stone-200/80">
-        <div className="container-content">
-          <Reveal className="mx-auto max-w-2xl text-center">
-            <Eyebrow>Real Villages, Real Change</Eyebrow>
-            <h2 className="mt-4 text-3xl font-bold leading-tight text-forest md:text-4xl">
-              Stories of <span className="accent">Transformation</span>
-            </h2>
-            <p className="body-copy mt-6">
-              No village stories have been documented and photographed yet.
-              This section will launch once at least two to three real
-              village cases are ready to publish.
-            </p>
-          </Reveal>
-          <Reveal delay={0.1} className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
-            <StoryCard />
-            <StoryCard />
-          </Reveal>
-        </div>
-      </section> */}
     </>
   );
 }

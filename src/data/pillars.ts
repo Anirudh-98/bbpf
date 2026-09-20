@@ -12,6 +12,7 @@ export type Pillar = {
   number: string;
   icon: LucideIcon;
   image: string;
+  imageAlt: string;
   name: string;
   hook: string;
   eyebrow: string;
@@ -28,7 +29,8 @@ export const pillars: Pillar[] = [
     slug: "forestation",
     number: "01",
     icon: Trees,
-    image: "/images/pillar-forestation.jpg",
+    image: "/images/pillar-forestation.webp",
+    imageAlt: "A young woman and an elderly man planting a sapling in red soil while a boy holds a pot of water",
     name: "Forestation",
     hook: "Restoring the green foundation — up to 50,000 trees per village.",
     eyebrow: "Pillar 01",
@@ -50,7 +52,8 @@ export const pillars: Pillar[] = [
     slug: "water-harvesting",
     number: "02",
     icon: Droplets,
-    image: "/images/pillar-water.jpg",
+    image: "/images/pillar-water.webp",
+    imageAlt: "A woman opening a hand-dug channel to carry pond water into her vegetable rows",
     name: "Water Harvesting",
     hook: "Rainwater and groundwater restoration for farms and families.",
     eyebrow: "Pillar 02",
@@ -70,7 +73,8 @@ export const pillars: Pillar[] = [
     slug: "agriculture",
     number: "03",
     icon: Wheat,
-    image: "/images/pillar-agriculture.jpg",
+    image: "/images/pillar-agriculture.webp",
+    imageAlt: "An elderly woman farmer laughing, holding freshly harvested sorghum ears in a golden field",
     name: "Agriculture",
     hook: "Helping farmers move from chemical to natural farming.",
     eyebrow: "Pillar 03",
@@ -92,7 +96,8 @@ export const pillars: Pillar[] = [
     slug: "education",
     number: "04",
     icon: BookOpen,
-    image: "/images/pillar-education.jpg",
+    image: "/images/pillar-education.webp",
+    imageAlt: "A schoolgirl writing in her notebook in a village classroom",
     name: "Education",
     hook: "Strengthening government schools with resources and innovation.",
     eyebrow: "Pillar 04",
@@ -113,7 +118,8 @@ export const pillars: Pillar[] = [
     slug: "health",
     number: "05",
     icon: Flower2,
-    image: "/images/pillar-health.jpg",
+    image: "/images/pillar-health.webp",
+    imageAlt: "Villagers of all ages doing yoga with raised arms at sunrise on the village common ground",
     name: "Health",
     hook: "Holistic wellbeing through yoga, meditation and Ayurveda.",
     eyebrow: "Pillar 05",

@@ -10,15 +10,29 @@
 
 # misc
 .DS_Store
-*.pem
+Thumbs.db
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
-.env*.local
+# secrets: never commit real credentials. Only .env.example (placeholders) is tracked.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+
+# hosting provider local state
+.vercel
+
+# Full-size AI image and video masters (~100 MB). The site uses the optimised copies in
+# public/images and public/videos, so the masters stay on your machine, not in Git or the deploy.
+/public/final-images/
 
 # typescript
 *.tsbuildinfo

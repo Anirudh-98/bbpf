@@ -13,8 +13,8 @@ const solutions = [
     title: "Proven Ecological Restoration",
     desc: "Countering deforestation and reviving biodiversity by planting up to 50,000 indigenous trees per village across 120+ rural communities.",
     bullets: "Increases tree cover, improves local air quality, and creates lasting micro-climates for villages.",
-    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1200&auto=format&fit=crop",
-    caption: "Afforestation initiative in 120+ village tracts",
+    image: "/images/home-solutions-tree-planting.webp",
+    alt: "Villagers planting rice seedlings by hand in a flooded field",
   },
   {
     id: "agriculture",
@@ -22,8 +22,8 @@ const solutions = [
     title: "Natural & Sacred Agriculture",
     desc: "Guiding farmers to transition away from expensive chemical fertilizers and pesticides to traditional, biological, and self-sufficient farming.",
     bullets: "Restores living soil microbiome, boosts moisture retention, and guarantees chemical-free, nutrient-dense harvests.",
-    image: "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?q=80&w=1200&auto=format&fit=crop",
-    caption: "Farmer inspecting crop health under natural farming",
+    image: "/images/home-solutions-natural-farming.webp",
+    alt: "A farmer checking the leaves of a healthy cotton crop",
   },
   {
     id: "community",
@@ -31,8 +31,8 @@ const solutions = [
     title: "Holistic Health & Rural Education",
     desc: "Strengthening rural schools with infrastructure and creative tools, alongside community health programs grounded in Ayurveda and wellness.",
     bullets: "Empowers youth and women with knowledge, hygiene, and preventative wellness practices.",
-    image: "https://images.unsplash.com/photo-1589923188900-85dae523342b?q=80&w=1200&auto=format&fit=crop",
-    caption: "Community health & learning workshops in action",
+    image: "/images/home-solutions-health-learning.webp",
+    alt: "A health worker talking with village women and schoolchildren in a shaded courtyard",
   },
   {
     id: "tradition",
@@ -40,8 +40,8 @@ const solutions = [
     title: "Parampara & Water Stewardship",
     desc: "Combining ancestral rainwater harvesting and desilting with contemporary monitoring to secure water resilience for all seasons.",
     bullets: "Rejuvenates dry ponds, recharges village borewells, and honors indigenous conservation traditions.",
-    image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200&auto=format&fit=crop",
-    caption: "Revitalized village pond and water catchment basin",
+    image: "/images/home-solutions-tank-desilting.webp",
+    alt: "Water flowing through a stepped irrigation channel between green fields",
   },
 ];
 
@@ -50,9 +50,9 @@ export default function InteractiveSolutions() {
   const activeSolution = solutions.find((s) => s.id === activeId) || solutions[0];
 
   return (
-    <section className="section bg-stone-50/70 border-y border-stone-200/80">
+    <section id="solutions" className="section scroll-mt-20 bg-stone-50/70 border-y border-stone-200/80">
       <div className="container-content">
-        {/* Section Header with Left Heading and Right Summary (Frame 00:06-00:07) */}
+        {/* Section Header with Left Heading and Right Summary */}
         <Reveal className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-xl">
             <Eyebrow>About BPPF</Eyebrow>
@@ -68,7 +68,7 @@ export default function InteractiveSolutions() {
           </p>
         </Reveal>
 
-        {/* 2-Column Interactive Showcase (Frame 00:07-00:09) */}
+        {/* 2-Column Interactive Showcase */}
         <Reveal delay={0.1} className="mt-12 grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
           {/* Left Column: Interactive Accordion */}
           <div className="flex flex-col gap-3.5 lg:col-span-6">
@@ -78,46 +78,54 @@ export default function InteractiveSolutions() {
               return (
                 <div
                   key={item.id}
-                  onClick={() => setActiveId(item.id)}
-                  className={`cursor-pointer rounded-2xl border transition-all duration-300 ${
+                  className={`rounded-2xl border transition-all duration-300 ${
                     isActive
                       ? "border-stone-300 bg-white p-6 shadow-soft ring-1 ring-stone-900/5"
                       : "border-stone-200/80 bg-white/70 p-5 hover:border-stone-300 hover:bg-white"
                   }`}
                 >
-                  <div className="flex items-center justify-between gap-4">
-                    <div className="flex items-center gap-3.5">
-                      <div
-                        className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl transition-colors ${
+                  <h3 className="text-base md:text-lg font-bold text-charcoal">
+                    <button
+                      type="button"
+                      onClick={() => setActiveId(item.id)}
+                      aria-expanded={isActive}
+                      aria-controls={`solution-panel-${item.id}`}
+                      className="flex w-full items-center justify-between gap-4 text-left"
+                    >
+                      <span className="flex items-center gap-3.5">
+                        <span
+                          className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl transition-colors ${
+                            isActive
+                              ? "bg-lime text-forest-deep"
+                              : "bg-stone-100 text-stone-600"
+                          }`}
+                        >
+                          <Icon className="h-5 w-5" />
+                        </span>
+                        <span>{item.title}</span>
+                      </span>
+
+                      <span
+                        className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition-all ${
                           isActive
-                            ? "bg-lime text-forest-deep shadow-xs"
-                            : "bg-stone-100 text-stone-600"
+                            ? "bg-lime text-forest-deep"
+                            : "bg-stone-100 text-stone-400"
                         }`}
                       >
-                        <Icon className="h-5 w-5" />
-                      </div>
-                      <h3 className="text-base md:text-lg font-bold text-charcoal">
-                        {item.title}
-                      </h3>
-                    </div>
-
-                    <div
-                      className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full transition-all ${
-                        isActive
-                          ? "bg-lime text-forest-deep shadow-xs"
-                          : "bg-stone-100 text-stone-400"
-                      }`}
-                    >
-                      {isActive ? (
-                        <Minus className="h-4 w-4 stroke-[2.5]" />
-                      ) : (
-                        <Plus className="h-4 w-4 stroke-[2.5]" />
-                      )}
-                    </div>
-                  </div>
+                        {isActive ? (
+                          <Minus className="h-4 w-4 stroke-[2.5]" />
+                        ) : (
+                          <Plus className="h-4 w-4 stroke-[2.5]" />
+                        )}
+                      </span>
+                    </button>
+                  </h3>
 
                   {isActive && (
-                    <div className="mt-4 pt-3 border-t border-stone-100 animate-fadeIn">
+                    <div
+                      id={`solution-panel-${item.id}`}
+                      className="mt-4 pt-3 border-t border-stone-100 animate-fadeIn"
+                    >
                       <p className="text-sm md:text-base leading-relaxed text-stone-600">
                         {item.desc}
                       </p>
@@ -131,12 +139,12 @@ export default function InteractiveSolutions() {
             })}
           </div>
 
-          {/* Right Column: Dynamic Photo Viewport (Frame 00:07-00:09) */}
+          {/* Right Column: Dynamic Photo Viewport */}
           <div className="relative overflow-hidden rounded-3xl border border-stone-200/80 bg-stone-900 shadow-lifted lg:col-span-6 aspect-[4/3] sm:aspect-[16/11]">
             <Image
               key={activeSolution.image}
               src={activeSolution.image}
-              alt={activeSolution.title}
+              alt={activeSolution.alt}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover transition-transform duration-700 hover:scale-105"

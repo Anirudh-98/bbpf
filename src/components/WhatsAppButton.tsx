@@ -24,6 +24,9 @@ export default function WhatsAppButton() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Guard against a mistyped number: don't render a button that opens somebody else's chat.
+  if (!/^\d{10,15}$/.test(contactInfo.whatsappNumber)) return null;
+
   const message = encodeURIComponent(
     "Hi BPPF, I'd like to know more about your village adoption program."
   );

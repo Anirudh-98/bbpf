@@ -76,12 +76,21 @@ export default function ContactPage() {
                   {contactInfo.instagram.label}
                 </a>
               </div>
-              <div>
-                <p className="text-xs font-bold uppercase tracking-wide text-stone-400">
-                  Facebook
-                </p>
-                <p className="text-stone-400">Link pending</p>
-              </div>
+              {contactInfo.facebook && (
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wide text-stone-400">
+                    Facebook
+                  </p>
+                  <a
+                    href={contactInfo.facebook.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-forest hover:text-forest-light"
+                  >
+                    {contactInfo.facebook.label}
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         </Reveal>

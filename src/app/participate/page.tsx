@@ -54,7 +54,7 @@ export default function ParticipatePage() {
               key={way.number}
               className="group flex flex-col gap-4 rounded-3xl border border-stone-200/80 bg-white p-8 shadow-soft transition-all duration-300 hover:border-stone-300 hover:shadow-card hover:-translate-y-1"
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-lime/20 text-sm font-extrabold text-forest shadow-xs">
+              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-lime/20 text-sm font-extrabold text-forest">
                 {way.number}
               </span>
               <h2 className="text-xl font-bold text-forest">{way.title}</h2>

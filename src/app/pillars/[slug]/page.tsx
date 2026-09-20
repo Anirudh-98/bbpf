@@ -66,7 +66,7 @@ export default async function PillarPage({
         <Reveal delay={0.1} className="relative mx-auto mt-12 aspect-[16/8] w-full max-w-4xl overflow-hidden rounded-[2.5rem] border border-stone-200/80 shadow-lifted">
           <Image
             src={pillar.image}
-            alt={pillar.name}
+            alt={pillar.imageAlt}
             fill
             sizes="(max-width: 1024px) 100vw, 960px"
             className="object-cover"

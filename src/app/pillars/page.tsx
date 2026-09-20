@@ -8,13 +8,12 @@ export const metadata: Metadata = {
 };
 
 export default function PillarsHubPage() {
+  // The root layout already provides <main>; nesting a second one is invalid HTML.
   return (
-    <main>
-      <FivePillarsSection
-        asH1
-        eyebrow="OUR APPROACH"
-        className="pt-20 md:pt-24 lg:pt-28"
-      />
-    </main>
+    <FivePillarsSection
+      asH1
+      eyebrow="OUR APPROACH"
+      className="pt-20 md:pt-24 lg:pt-28"
+    />
   );
 }

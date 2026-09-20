@@ -15,7 +15,7 @@ export default function LeadershipCard({
 
   return (
     <div className="group relative flex flex-col items-start gap-4 rounded-3xl border border-stone-200/80 bg-white p-7 shadow-soft transition-all duration-300 hover:border-stone-300 hover:shadow-card hover:-translate-y-1">
-      <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-lime/25 text-base font-extrabold text-forest shadow-xs">
+      <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-lime/25 text-base font-extrabold text-forest">
         {initials}
       </span>
       <div>

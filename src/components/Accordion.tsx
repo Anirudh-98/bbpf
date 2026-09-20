@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useState } from "react";
 import { Plus, Minus } from "lucide-react";
 
 export type AccordionItem = {
@@ -11,6 +11,7 @@ export type AccordionItem = {
 
 export default function Accordion({ items }: { items: AccordionItem[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const baseId = useId();
 
   return (
     <div className="flex flex-col gap-3.5">
@@ -27,8 +28,10 @@ export default function Accordion({ items }: { items: AccordionItem[] }) {
           >
             <button
               type="button"
+              id={`${baseId}-trigger-${index}`}
               onClick={() => setOpenIndex(isOpen ? null : index)}
               aria-expanded={isOpen}
+              aria-controls={`${baseId}-panel-${index}`}
               className="flex w-full items-center justify-between gap-4 p-5 text-left md:p-6"
             >
               <div className="flex items-center gap-3.5">
@@ -42,7 +45,7 @@ export default function Accordion({ items }: { items: AccordionItem[] }) {
                 </span>
               </div>
 
-              {/* Toggle indicator: transforms into green pill when active (Frame 00:26) */}
+              {/* Toggle indicator: transforms into green pill when active */}
               <div
                 className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full transition-all duration-300 ${
                   isOpen
@@ -59,6 +62,10 @@ export default function Accordion({ items }: { items: AccordionItem[] }) {
             </button>
 
             <div
+              id={`${baseId}-panel-${index}`}
+              role="region"
+              aria-labelledby={`${baseId}-trigger-${index}`}
+              aria-hidden={!isOpen}
               className={`grid overflow-hidden transition-all duration-300 ease-out ${
                 isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
               }`}

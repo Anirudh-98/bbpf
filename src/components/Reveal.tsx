@@ -29,6 +29,9 @@ export default function Reveal({
     const el = ref.current;
     if (!el) return;
 
+    // Leave content in place for people who ask their device to reduce motion.
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
     const ctx = gsap.context(() => {
       gsap.fromTo(
         el,

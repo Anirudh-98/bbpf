@@ -24,7 +24,7 @@ export default function Stepper({
           className="group relative flex flex-col gap-3.5 rounded-3xl border border-stone-200/80 bg-white p-7 shadow-soft transition-all duration-300 hover:border-stone-300 hover:shadow-card hover:-translate-y-1"
         >
           <div className="flex items-center justify-between">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-lime/20 text-forest shadow-xs">
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-lime/20 text-forest">
               <Icon className="h-5 w-5" strokeWidth={1.75} />
             </span>
             <span className="text-xs font-semibold text-stone-400 uppercase tracking-wider">

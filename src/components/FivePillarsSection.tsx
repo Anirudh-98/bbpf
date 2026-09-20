@@ -44,8 +44,8 @@ const PILLARS: PillarData[] = [
     statement: "Restore the green foundation.",
     description:
       "Up to 50,000 trees per village through native tree plantation and biodiversity restoration.",
-    image: "/images/nature-restore.jpg",
-    alt: "Hands planting a young sapling in rich soil",
+    image: "/images/pillar-forestation.webp",
+    alt: "A young woman and an elderly man planting a sapling in red soil while a boy holds a pot of water",
     icon: Sprout,
     desktop: {
       left: 20,
@@ -65,8 +65,8 @@ const PILLARS: PillarData[] = [
     statement: "Restore what sustains life.",
     description:
       "Rainwater and groundwater restoration for farms, homes and future generations.",
-    image: "/images/water-harvesting-cascade.jpg",
-    alt: "Pristine cascading waterfall into turquoise freshwater pool",
+    image: "/images/pillar-water.webp",
+    alt: "A woman opening a hand-dug channel to carry pond water into her vegetable rows",
     icon: Droplets,
     desktop: {
       left: 825,
@@ -86,8 +86,8 @@ const PILLARS: PillarData[] = [
     statement: "Grow with the land, not against it.",
     description:
       "Helping farmers move from chemical-intensive practices to natural and regenerative farming.",
-    image: "/images/agriculture-farmer-crop.jpg",
-    alt: "Smiling organic farmer checking healthy vegetable crops in field",
+    image: "/images/pillar-agriculture.webp",
+    alt: "An elderly woman farmer laughing, holding freshly harvested sorghum ears in a golden field",
     icon: Leaf,
     desktop: {
       left: 15,
@@ -107,8 +107,8 @@ const PILLARS: PillarData[] = [
     statement: "Build opportunity where children are.",
     description:
       "Strengthening government schools with resources, technology and better learning environments.",
-    image: "/images/pillar-education.jpg",
-    alt: "Rural school child studying attentively at classroom desk",
+    image: "/images/pillar-education.webp",
+    alt: "A schoolgirl writing in her notebook in a village classroom",
     icon: BookOpen,
     desktop: {
       left: 422,
@@ -128,8 +128,8 @@ const PILLARS: PillarData[] = [
     statement: "Wellbeing is part of development.",
     description:
       "Holistic wellbeing through yoga, meditation, Ayurveda and healthier communities.",
-    image: "/images/pillar-health.jpg",
-    alt: "Person practicing yoga in natural sunrise landscape",
+    image: "/images/pillar-health.webp",
+    alt: "Villagers of all ages doing yoga with raised arms at sunrise on the village common ground",
     icon: Heart,
     desktop: {
       left: 830,
@@ -163,7 +163,7 @@ export default function FivePillarsSection({
       className={`relative overflow-hidden bg-[#FAFAF7] py-20 md:py-28 lg:py-32 border-b border-[#E8ECE6] ${className}`}
     >
       <div className="container-content">
-        {/* 1. SECTION HEADER */}
+        {/* SECTION HEADER */}
         <Reveal className="mx-auto max-w-3xl text-center">
           <div className="inline-flex items-center gap-2">
             <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#52715A]">
@@ -185,7 +185,7 @@ export default function FivePillarsSection({
           </p>
         </Reveal>
 
-        {/* 2. DESKTOP INTERACTIVE PILLARS SYSTEM (>= 1024px) */}
+        {/* DESKTOP INTERACTIVE PILLARS SYSTEM (>= 1024px) */}
         <div className="hidden lg:block mt-16 xl:mt-20">
           <div className="relative mx-auto w-[1200px] h-[780px] max-w-full origin-top scale-[0.84] xl:scale-100 transition-transform duration-300">
             {/* SVG Connector Lines and Orbit Rings */}
@@ -272,11 +272,10 @@ export default function FivePillarsSection({
             >
               <div className="group relative h-full w-full overflow-hidden rounded-full border-[4px] border-white shadow-[0_20px_50px_rgba(23,32,25,0.18)] ring-1 ring-stone-900/5 transition-transform duration-700 ease-out hover:scale-[1.015]">
                 <Image
-                  src="/images/thriving-village-center.jpg"
-                  alt="Thriving green village with winding river, traditional homes and natural mountains"
+                  src="/images/home-pillars-thriving-village.webp"
+                  alt="Thriving green village with a stream, red-tiled homes and distant hills"
                   fill
                   sizes="360px"
-                  priority
                   className="object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
                 />
 
@@ -386,16 +385,15 @@ export default function FivePillarsSection({
           </div>
         </div>
 
-        {/* 3. MOBILE & TABLET VERTICAL STORYTELLING EXPERIENCE (< 1024px) */}
+        {/* MOBILE & TABLET VERTICAL STORYTELLING EXPERIENCE (< 1024px) */}
         <div className="block lg:hidden mt-10 sm:mt-12">
           {/* Mobile Central Village Feature Visual */}
           <Reveal className="relative mx-auto w-full aspect-[16/10] sm:aspect-[16/9] overflow-hidden rounded-3xl border-[3px] border-white shadow-[0_16px_40px_rgba(23,32,25,0.12)]">
             <Image
-              src="/images/thriving-village-center.jpg"
-              alt="Thriving rural village landscape"
+              src="/images/home-pillars-thriving-village.webp"
+              alt="Thriving green village with a stream, red-tiled homes and distant hills"
               fill
               sizes="(max-width: 1024px) 100vw, 800px"
-              priority
               className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/25" />

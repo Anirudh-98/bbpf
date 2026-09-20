@@ -29,8 +29,8 @@ export default function TraditionCulturePage() {
 
         <Reveal delay={0.1} className="relative mx-auto mt-14 aspect-[16/8] w-full max-w-4xl overflow-hidden rounded-[2.5rem] border border-stone-200/80 shadow-lifted">
           <Image
-            src="/images/soil-water.jpg"
-            alt="Traditional farming practice"
+            src="/images/tradition-hero-bullock-ploughing.webp"
+            alt="A farmer ploughing a red-soil field with a pair of bullocks at dawn while egrets follow"
             fill
             sizes="(max-width: 1024px) 100vw, 960px"
             className="object-cover"

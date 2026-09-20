@@ -16,6 +16,7 @@ export default function IntroLoader() {
     document.body.style.overflow = "hidden";
 
     const start = Date.now();
+    const timers: number[] = [];
     let done = false;
 
     function finish() {
@@ -23,11 +24,13 @@ export default function IntroLoader() {
       done = true;
       const elapsed = Date.now() - start;
       const remaining = Math.max(MIN_DISPLAY_MS - elapsed, 0);
-      window.setTimeout(() => {
-        setFadingOut(true);
-        document.body.style.overflow = "";
-        window.setTimeout(() => setVisible(false), FADE_MS);
-      }, remaining);
+      timers.push(
+        window.setTimeout(() => {
+          setFadingOut(true);
+          document.body.style.overflow = "";
+          timers.push(window.setTimeout(() => setVisible(false), FADE_MS));
+        }, remaining)
+      );
     }
 
     // The hero section dispatches this once its background video can play.
@@ -39,12 +42,12 @@ export default function IntroLoader() {
       window.addEventListener("load", finish);
     }
     // Hard cap so the intro never blocks the site indefinitely.
-    const maxTimer = window.setTimeout(finish, MAX_DISPLAY_MS);
+    timers.push(window.setTimeout(finish, MAX_DISPLAY_MS));
 
     return () => {
       window.removeEventListener("hero-video-ready", finish);
       window.removeEventListener("load", finish);
-      window.clearTimeout(maxTimer);
+      timers.forEach((id) => window.clearTimeout(id));
       document.body.style.overflow = "";
     };
   }, []);
@@ -56,8 +59,10 @@ export default function IntroLoader() {
       role="status"
       aria-live="polite"
       aria-label="Loading"
+      data-intro-loader
+      // While fading out the overlay must not swallow clicks meant for the page underneath.
       className={`fixed inset-0 z-[100] flex flex-col items-center justify-center bg-white px-6 transition-opacity duration-500 ease-out ${
-        fadingOut ? "opacity-0" : "opacity-100"
+        fadingOut ? "pointer-events-none opacity-0" : "opacity-100"
       }`}
     >
       <Image

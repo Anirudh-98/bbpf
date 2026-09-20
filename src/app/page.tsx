@@ -1,20 +1,16 @@
 import NextLink from "next/link";
 import Image from "next/image";
-import { ArrowDown, ArrowUpRight, Compass, Sprout, Wheat, Users, TrendingUp, Infinity as InfinityIcon, CheckCircle2 } from "lucide-react";
+import { ArrowUpRight, Compass, Sprout, Wheat, Users, TrendingUp, Infinity as InfinityIcon, CheckCircle2 } from "lucide-react";
 import Eyebrow from "@/components/Eyebrow";
-import ButtonPair from "@/components/ButtonPair";
 import Stepper from "@/components/Stepper";
 import StatBlock, { type Stat } from "@/components/StatBlock";
+import HeroSection from "@/components/HeroSection";
 import InteractiveSolutions from "@/components/InteractiveSolutions";
 import InteractiveHowItWorks from "@/components/InteractiveHowItWorks";
 import FivePillarsSection from "@/components/FivePillarsSection";
-import StorySlider from "@/components/StorySlider";
 import FaqSection from "@/components/FaqSection";
 import Reveal from "@/components/Reveal";
-import { pillars } from "@/data/pillars";
 import BankDetailsCard from "@/components/BankDetailsCard";
-
-import HeroSection from "@/components/HeroSection";
 
 const steps = [
   {
@@ -65,10 +61,10 @@ const homeStats: Stat[] = [
 export default function HomePage() {
   return (
     <>
-      {/* 1. Redesigned Hero Section matching reference screenshot with animated numbers */}
+      {/* Redesigned Hero Section with animated numbers */}
       <HeroSection />
 
-      {/* 2. Micro-Trust Ticker Strip (Frame 00:04 - 00:05) */}
+      {/* Micro-Trust Ticker Strip */}
       <div className="border-b border-stone-200/80 bg-stone-100/70 py-4">
         <Reveal className="container-content flex flex-wrap items-center justify-between gap-4 text-xs font-semibold text-stone-600">
           <span className="text-stone-400 uppercase tracking-wider text-[11px]">
@@ -95,7 +91,7 @@ export default function HomePage() {
         </Reveal>
       </div>
 
-      {/* 3. The Core Idea / Statement with Inline Photo Badge (Frame 00:06) */}
+      {/* The Core Idea / Statement with Inline Photo Badge */}
       <section className="section bg-white">
         <div className="container-content">
           <Reveal className="mx-auto max-w-5xl text-center">
@@ -114,8 +110,8 @@ export default function HomePage() {
               planting indigenous trees
               <span className="inline-flex align-middle mx-2.5 overflow-hidden rounded-full h-10 w-16 border-2 border-lime shadow-sm relative">
                 <Image
-                  src="/images/nature-restore.jpg"
-                  alt="Nature thumbnail"
+                  src="/images/pillar-forestation.webp"
+                  alt=""
                   fill
                   sizes="56px"
                   className="object-cover"
@@ -137,16 +133,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. Interactive Solutions Accordion with Dynamic Photo Preview (Frame 00:07 - 00:09) */}
+      {/* Interactive Solutions Accordion with Dynamic Photo Preview */}
       <InteractiveSolutions />
 
-      {/* 5. Interactive "How It Works" Tabbed Showcase with Floating Widgets (Frame 00:11 - 00:15) */}
+      {/* Interactive "How It Works" Tabbed Showcase with Floating Widgets */}
       <InteractiveHowItWorks />
 
-      {/* 6. Five Pillars: One Mission System (Matching Reference Image) */}
+      {/* Five Pillars: One Mission System */}
       <FivePillarsSection />
 
-      {/* 7. The 6-Step Village Transformation Model */}
+      {/* The 6-Step Village Transformation Model */}
       <section className="section bg-white">
         <div className="container-content">
           <Reveal className="mx-auto max-w-2xl text-center">
@@ -177,10 +173,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 8. Real Stories / Testimonials Slider (Frame 00:20 - 00:23) */}
-      <StorySlider />
-
-      {/* 9. Impact Snapshot (Data-Driven Development) */}
+      {/* Impact Snapshot (Data-Driven Development) */}
       <section className="section bg-white">
         <div className="container-content">
           <Reveal className="mx-auto max-w-2xl text-center">
@@ -210,14 +203,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 10. Tradition & Ancient Wisdom Strip */}
+      {/* Tradition & Ancient Wisdom Strip */}
       <section className="section bg-stone-50/70 border-y border-stone-200/80">
         <div className="container-content">
           <Reveal className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-12">
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2.5rem] border border-stone-200/80 shadow-lifted">
               <Image
-                src="/images/farmer-landscape.jpg"
-                alt="Rural village landscape rooted in Parampara"
+                src="/images/home-parampara-elder-and-youth.webp"
+                alt="An elderly farmer showing millet seeds to a young man holding a tablet"
                 fill
                 sizes="(max-width: 768px) 100vw, 480px"
                 className="object-cover"
@@ -250,7 +243,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 11. Direct Bank Transfer / Support Us */}
+      {/* Direct Bank Transfer / Support Us */}
       <section id="donate" className="section-sm scroll-mt-28 bg-white">
         <div className="container-content">
           <Reveal className="mx-auto max-w-2xl text-center">
@@ -283,7 +276,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 12. FAQ Section (Frame 00:24 - 00:29) */}
+      {/* FAQ Section */}
       <FaqSection />
     </>
   );

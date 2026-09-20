@@ -17,20 +17,22 @@ export default function HeroSection() {
           muted
           loop
           playsInline
+          aria-hidden="true"
+          poster="/images/home-hero-poster.jpg"
           onCanPlay={() => window.dispatchEvent(new Event("hero-video-ready"))}
           className="h-full w-full object-cover object-center"
         >
-          <source src="/videos/background.mp4" type="video/mp4" />
+          <source src="/videos/home-hero-video.mp4" type="video/mp4" />
         </video>
         {/* Balanced gradient: keeps video footage clear while ensuring text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/35 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40" />
       </div>
 
-      {/* Main Hero Content (Frame 00:00) */}
+      {/* Main Hero Content */}
       <div className="container-content relative z-10 pt-6 sm:pt-12">
         <div className="max-w-2xl lg:max-w-3xl">
-          {/* 3-Line Headline matching reference */}
+          {/* 3-Line Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.08]">
             Boost Productivity <br />
             with Smarter Farming <br />
@@ -43,7 +45,7 @@ export default function HeroSection() {
             grow more, waste less, and work smarter.
           </p>
 
-          {/* CTA Buttons matching reference */}
+          {/* CTA Buttons */}
           <div className="mt-8 flex flex-wrap items-center gap-3.5">
             <MotionLink
               href="/approach"
@@ -86,35 +88,35 @@ export default function HeroSection() {
             </motion.span>
           </a>
 
-          {/* Animated 3-Column Stats matching user's reference picture */}
+          {/* Animated 3-Column Stats */}
           <div className="flex flex-wrap items-center gap-8 sm:gap-12 md:gap-16">
-            {/* Stat 1: 120+ VILLAGES IMPACTED */}
+            {/* Only figures BPPF has verified (see content.md): 120 forestation villages, the
+                50,000 trees/village goal, and the five-pillar model. "Farmers supported" and
+                "yield improvement" are still pending verification, so they must not appear here. */}
             <div className="flex flex-col">
               <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-lime">
                 <AnimatedStatCounter target={120} suffix="+" />
               </div>
               <span className="mt-1 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-stone-300">
-                Villages Impacted
+                Villages with Forestation
               </span>
             </div>
 
-            {/* Stat 2: 5,000+ FARMERS SUPPORTED */}
             <div className="flex flex-col">
               <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-lime">
-                <AnimatedStatCounter target={5000} suffix="+" />
+                <AnimatedStatCounter target={50000} />
               </div>
               <span className="mt-1 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-stone-300">
-                Farmers Supported
+                Trees / Village Goal
               </span>
             </div>
 
-            {/* Stat 3: 35% YIELD IMPROVEMENT */}
             <div className="flex flex-col">
               <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-lime">
-                <AnimatedStatCounter target={35} suffix="%" />
+                <AnimatedStatCounter target={5} />
               </div>
               <span className="mt-1 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-stone-300">
-                Yield Improvement
+                Integrated Pillars
               </span>
             </div>
           </div>

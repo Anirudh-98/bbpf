@@ -1,0 +1,798 @@
+==============================================================================
+BPPF WEBSITE - IMAGE PROMPT BOOK
+==============================================================================
+19 photographs, listed in the order a visitor scrolls through the website.
+Target look: ATTRACTIVE AND REAL - premium editorial documentary photography
+of a native Indian village. Beautiful light, warm people, rich natural colour,
+and nothing that gives away an AI origin.
+
+Every prompt is complete: copy the line between "PROMPT >>>" and the next
+field straight into your image tool. Long lines: turn on word wrap
+(VS Code: Alt+Z, Notepad: Format > Word Wrap).
+
+Default region is Telangana (BPPF is registered there). If your tool ignores
+the word "Telangana", add "South Indian village, Deccan plateau". If your
+villages are elsewhere, search-and-replace "Telangana" and adjust the
+reference bank in section 4.
+
+
+------------------------------------------------------------------------------
+CONTENTS
+------------------------------------------------------------------------------
+  1.  Read this first (honest use of AI images)
+  2.  THE LOOK: attractive AND real (and how to avoid the AI look)
+  3.  Style block + negative prompt (use on every image)
+  4.  Reference bank: real details of an Indian village
+  5.  FLOW AT A GLANCE  (all 19 images, in scroll order)
+  6.  PART A  Home page, top to bottom      (images 01-17)
+  7.  PART B  About page                     (image 18)
+  8.  PART C  Tradition & Culture page       (image 19)
+  9.  PART D  Slots that must NOT be AI-generated
+ 10.  PART E  Quick map: file name -> where it is used
+ 11.  PART F  After you generate: how to hand the files over
+
+
+==============================================================================
+1. READ THIS FIRST - HONEST USE OF AI IMAGES
+==============================================================================
+BPPF asks people for money, so how the pictures are presented matters.
+
+ - AI photos are fine as atmosphere and illustration. They are NOT evidence.
+   Do not caption them as BPPF's actual villages, farmers or beneficiaries.
+ - Never use AI people for testimonials, "stories from the field", leadership
+   photos or impact claims. Those need real, consented photographs.
+   (The homepage testimonial slider was removed for exactly this reason.)
+ - Real photos beat AI photos. Every entry below doubles as a SHOT LIST: hand
+   it to a local photographer and shoot the real thing in a BPPF village at
+   the light described. Swap real photos in over time; keep the file names.
+ - Consider one line in the footer: "Some images are illustrative."
+ - Never generate the face of a real, named person.
+ - Show dignity: work, skill, pride, learning, abundance. No pity poses.
+
+
+==============================================================================
+2. THE LOOK: ATTRACTIVE AND REAL
+==============================================================================
+Think of a National Geographic story or a premium NGO annual report: real
+places, real people, a skilled photographer, the best light of the day.
+Six things make a picture both attractive and believable:
+
+ 1. LIGHT does most of the work.
+    Sunrise, golden hour, backlight with a glowing rim on hair and clothes,
+    dust and mist catching the sun, soft window or shade light indoors.
+    Never flat grey midday light. Every prompt below asks for good light.
+
+ 2. COMPOSITION - one clear focal point, in layers.
+    Foreground (flowers, grass, a pot) -> subject -> background (village,
+    hills). Use leading lines: field bunds, lanes, crop rows, a dam wall.
+    Leave calm space where the website puts text.
+
+ 3. COLOUR - rich but natural.
+    Warm red-ochre soil, deep greens, blue-teal sky, and saturated saree
+    colours (marigold yellow, magenta, teal, indigo). A gentle warm grade.
+    Never neon greens, never HDR halos, never a sepia filter.
+
+ 4. PEOPLE - warm, genuine, dignified.
+    Natural laughter, quiet pride, absorbed concentration. Healthy, bright
+    cotton clothes with honest wear. Mid-action and candid. They do not stare
+    at the camera (except the one portrait). No stock-photo smiles.
+
+ 5. MOOD - hopeful and abundant.
+    Green, water, harvest, learning, community. Alive and proud, never
+    poverty.
+
+ 6. REAL - photographic language and natural texture.
+    A real camera, lens and aperture in the prompt. Natural skin with pores
+    and lines, not airbrushed. A believable amount of dust, mud and creases.
+
+WORDS TO AVOID (they create the plastic, over-processed "AI look"):
+  ultra detailed, 8K, hyperrealistic, masterpiece, HDR, perfect, trending on
+  artstation, octane, unreal engine, "cinematic 4k render".
+
+WORDS THAT HELP (already inside every prompt):
+  professional editorial documentary photograph, golden hour, backlit, rim
+  light, shallow depth of field, Kodak Portra 400 colour, fine film grain,
+  candid, well composed, clear focal point.
+
+WORKFLOW
+  a) Generate 6-8 variants of each prompt. Choose by asking: "would a real
+     photographer have been standing there?" Reject any that look glossy or
+     too perfect; keep the one with natural light and natural faces.
+  b) Zoom to 100% and check the usual tells:
+       HANDS      keep them busy or half-hidden; count fingers; inpaint fixes
+       FACES      no cloned faces in groups; turn some people away from camera
+       EYES/SMILE natural laughter, not a frozen grin; eyes look at the task
+       CLOTHES    saree pleats and dhoti wraps are often wrong - zoom in
+       TOOLS/POTS spade, plough, sickle, pots must make physical sense
+       TEXT       invented scripts on signs look fake - leave signs blank
+       LIGHT      shadows must all fall the same way; sky must not glow
+       COLOUR     greens should be lush but natural, never neon
+  c) Finish (5 minutes in any photo editor):
+       auto-tone -> gentle S-curve contrast -> warm the highlights slightly
+       -> vibrance +8 (not saturation) -> keep skin tones natural ->
+       brighten faces a touch (+0.3 EV) -> fine grain ~3% -> faint vignette
+       -> light sharpen -> export sRGB JPEG quality ~85.
+  d) File size: keep each image under ~800 KB (hero poster under 250 KB).
+     The website converts to WebP/AVIF automatically.
+  e) Fix a bad detail by inpainting that region only. Do not regenerate the
+     whole picture for one wrong hand.
+
+QUICK FIXES WHEN A RESULT IS OFF
+  Looks flat or dull      add "low golden sun behind the subject, glowing rim
+                          light, soft warm haze"
+  Looks fake or plasticky lower stylize (Midjourney --stylize 30-50) and add
+                          "Kodak Portra 400, fine film grain, natural skin
+                          texture with pores"
+  Faces look stiff        add "laughing mid-sentence, looking at a task, not
+                          at the camera"
+  Colours look garish     add "natural colour, gentle warm grade" and remove
+                          any colour words you added yourself
+  Scene looks staged      add "candid, people busy with real work, ordinary
+                          background clutter"
+  Too clean               add a little "dust in the air, soil on clothes"
+
+
+==============================================================================
+3. STYLE BLOCK + NEGATIVE PROMPT
+==============================================================================
+STYLE BLOCK (already inside every prompt; reuse it for any extra shot):
+  Professional editorial documentary photograph, National Geographic quality,
+  shot on a full-frame camera with a prime lens, beautiful natural light,
+  rich natural colours with a gentle warm grade, Kodak Portra 400 look, fine
+  film grain, natural skin texture, genuine warm expressions, candid but
+  beautifully composed, clear focal point, no text, no watermark.
+
+NEGATIVE PROMPT (paste into the "negative prompt" field; in Midjourney put it
+after --no):
+  watermark, text, captions, logo, readable signage, cartoon, illustration,
+  painting, 3D render, CGI, plastic skin, airbrushed, over-smoothed, glossy,
+  HDR halos, oversaturated, neon colours, sepia filter, fantasy lighting,
+  lens flare, bokeh balls, extra fingers, deformed hands, distorted faces,
+  cloned faces, identical people, frozen grin, stock-photo smile, staring
+  into camera, western clothing, modern skyscrapers, tourist stereotypes,
+  snake charmers, elephants, palaces, costume turbans, sad or begging poses,
+  poverty stereotypes, torn dirty clothes, dull flat lighting, grey washed-out
+  look, muddy colours, harsh midday sun, cluttered composition, sterile
+  staged set
+
+TOOL NOTES (check your tool's current parameters, they change often)
+  Midjourney : append  --ar 3:2  (or the ratio in each entry)  --style raw
+               --stylize 50   (lower stylize = less "AI polish")
+  Flux / Imagen / Gemini / Ideogram / Firefly : set the aspect ratio in the
+               interface; plain-English prompts work as written.
+  Ask for the size listed in each entry, or upscale to it afterwards.
+
+
+==============================================================================
+4. REFERENCE BANK - REAL DETAILS OF AN INDIAN (TELANGANA) VILLAGE
+==============================================================================
+Sprinkle any of these into a prompt when a scene looks generic.
+
+PEOPLE AND CLOTHES
+  Women : cotton sarees in marigold yellow, magenta, teal, indigo, maroon
+          (pallu over the shoulder, or tucked at the waist while working),
+          thin borders, glass bangles, small bindi, toe rings, oiled braids,
+          jasmine in the hair.
+  Men   : white or checked cotton shirts, lungi (dhoti for elders), a white
+          cotton towel over the shoulder, a cotton head cloth for field work,
+          worn rubber slippers.
+  Kids  : navy-and-white school uniforms, two braids with ribbons, cloth bags.
+  Skin  : a natural range of brown tones, with pores and lines.
+
+HOUSES AND STREET
+  Whitewashed or ochre-painted brick and lime houses, red country-tile roofs,
+  flat concrete roofs, the odd thatched roof, low compound walls, rice-flour
+  muggu patterns at the doorstep, a rope cot outside, a tulasi plant pedestal,
+  hand pump or borewell, satellite dish, laundry line, bicycles, old
+  motorbikes, tractor with trolley, a small temple with a saffron flag.
+
+LAND AND ANIMALS
+  Red and black cotton soil, granite boulders and low rocky hills, tamarind,
+  neem, banyan, mango and palm trees, cattle egrets, village tanks (chervu)
+  with reeds and lotus. Crops: paddy, cotton, chilli, maize, jowar (sorghum),
+  bajra (pearl millet), groundnut, turmeric, marigold borders. Animals: white
+  Ongole bulls, buffaloes, goats, country hens, desi cows.
+
+OBJECTS
+  Steel and brass pots, steel tumblers, plastic pots (kudam), bamboo winnowing
+  trays and baskets, wooden plough, sickle, spade, jute sacks, blue plastic
+  drums, tarpaulin sheets, whitewashed government buildings with a coloured
+  band along the wall.
+
+SEASON AND LIGHT
+  Dry season: red dust, cracked earth, glowing in low sun. After monsoon: deep
+  greens, bright clouds. Early morning mist. Golden hour. The prompts below
+  vary the time of day and the mood so the site does not feel like one long
+  sunset.
+
+
+==============================================================================
+5. FLOW AT A GLANCE  (every image, in the order a visitor sees it)
+==============================================================================
+HOME PAGE  ( / )
+  01  Hero .............................. home-hero-poster.jpg
+  --  "Our Belief" tiny round photo ..... reuses pillar-forestation.jpg
+  02  Solutions #1 Ecological ............ home-solutions-tree-planting.jpg
+  03  Solutions #2 Natural Farming ...... home-solutions-natural-farming.jpg
+  04  Solutions #3 Health & Education ... home-solutions-health-learning.jpg
+  05  Solutions #4 Water & Parampara .... home-solutions-tank-desilting.jpg
+  06  How It Works, tab 1 Overview ...... home-how-village-overview.jpg
+  07  How It Works, tab 2 Foundation .... home-how-check-dam.jpg
+  08  How It Works, tab 3 Natural Farming home-how-natural-farming-field.jpg
+  09  How It Works, tab 4 Empowerment ... home-how-gram-panchayat.jpg
+  10  Five Pillars, centre circle ....... home-pillars-thriving-village.jpg
+  11  Pillar 01 Forestation ............. pillar-forestation.jpg
+  12  Pillar 02 Water Harvesting ........ pillar-water.jpg
+  13  Pillar 03 Agriculture ............. pillar-agriculture.jpg
+  14  Pillar 04 Education ............... pillar-education.jpg
+  15  Pillar 05 Health .................. pillar-health.jpg
+  --  6-step model, Impact numbers, Bank details, FAQ: no photos
+  16  Parampara strip ................... home-parampara-elder-and-youth.jpg
+  17  Footer background (EVERY page) .... site-footer-background.jpg
+
+ABOUT PAGE  ( /about )
+  18  Top banner with the quote ......... about-hero-village-dusk.jpg
+
+TRADITION & CULTURE PAGE  ( /tradition-culture )
+  19  Top banner ........................ tradition-hero-bullock-ploughing.jpg
+
+WHERE THE PILLAR IMAGES (11-15) ALSO APPEAR
+  /pillars          the same five cards as on Home
+  /pillars/<name>   each one again as the wide banner at the top of its page
+                    (forestation, water-harvesting, agriculture, education,
+                    health)
+
+SHARE PREVIEW (WhatsApp / Facebook link picture)
+  Uses image 01 cropped to 1200 x 630. No separate image needed.
+
+
+==============================================================================
+PART A - HOME PAGE, TOP TO BOTTOM
+==============================================================================
+
+------------------------------------------------------------------------------
+IMAGE 01 of 19  -  HERO
+------------------------------------------------------------------------------
+Name      : home-hero-poster.jpg
+Section   : HOME > Hero (very top of the page, under the navigation bar)
+Shown as  : Poster frame shown before the background video loads, and the
+            fallback if the video cannot play. Today the hero is black until
+            the video loads, so this also fixes that. Also the WhatsApp /
+            Facebook share picture (crop 1200 x 630).
+Replaces  : nothing (new). The existing video is public/videos/background.mp4.
+Shape     : 16:9 landscape. Generate 2560 x 1440. Export 1920 x 1080,
+            under 250 KB.
+Safe zone : keep the LEFT HALF calm (headline and buttons sit there) and the
+            bottom 20% quiet (statistics bar). Main interest on the right.
+LOOK      : sunrise gold and pink sky, deep greens, saree colours popping,
+            glowing mist. The "wow" picture of the whole site.
+Alt text  : Women carrying harvested paddy along a field bund at sunrise above
+            a village and its tank
+
+PROMPT >>>
+Wide editorial documentary photograph at first light over a Telangana village valley, seen from a low rocky rise. In the foreground five women in cotton sarees in marigold yellow, magenta, teal and indigo walk in single file along a raised field bund carrying bundles of harvested paddy and shallow baskets on their heads, backlit by the low sun with a glowing rim of light on their sarees and hair, dew-covered grass and a few marigold flowers along the bund in the near foreground. Below them are lush green paddy fields and a small village tank mirroring a pink-gold sky, a cluster of houses with red country-tile roofs and thin cooking smoke, a small temple tower with a saffron flag, tamarind and palm trees, and layered blue granite hills fading into warm haze. Thin ground mist and glowing dust in the air, a strong sense of depth with leading lines along the bund. The left third of the frame is open sky and field, calm and uncluttered. Shot on a full-frame camera, 35mm lens, f/5.6, beautiful natural light, rich natural colours with a gentle warm grade, Kodak Portra 400 look, fine film grain, candid but beautifully composed, no text.
+
+WATCH FOR : five women that are not five copies; baskets sitting on heads
+            believably; saree colours vivid but not neon; no extra limbs in
+            silhouette.
+
+OPTIONAL - REPLACE THE HERO VIDEO (only if the current background.mp4 is not
+clearly an Indian village). Text-to-video prompt, 8 seconds, 1080p, no audio:
+VIDEO PROMPT >>>
+Slow steady drone glide forward and slightly downward over a lush green Telangana village valley at sunrise, women in bright sarees carrying baskets and bundles walking single file along a field bund in the foreground, golden backlight, thin mist drifting over a village tank, cooking smoke rising from red-tiled roofs, birds crossing a pink-gold sky, natural motion, realistic editorial documentary look, rich natural colours, no text, no people looking at the camera. Make 3 clips, keep the calmest, keep the file under 6 MB, and trim it so the first and last frames match for a smooth loop.
+
+
+------------------------------------------------------------------------------
+"OUR BELIEF" SECTION  -  no new image
+------------------------------------------------------------------------------
+The small round photo inside the sentence ("...planting indigenous trees
+[photo] while resilient communities...") is only 64 x 40 px. It reuses
+pillar-forestation.jpg (image 11). Nothing to generate.
+
+
+------------------------------------------------------------------------------
+IMAGE 02 of 19  -  SOLUTIONS ACCORDION, ITEM 1
+------------------------------------------------------------------------------
+Name      : home-solutions-tree-planting.jpg
+Section   : HOME > "Rural Transformation Solutions That Deliver Real Results"
+            > accordion item 1 "Proven Ecological Restoration"
+Shown as  : Large photo to the right of the accordion; appears when item 1 is
+            open (it is open by default, so it is the first photo people see
+            in this section).
+Replaces  : Unsplash photo-1542601906990 (hot-linked from another website)
+Shape     : 3:2 landscape. Generate 1800 x 1200. Shown ~600 px wide.
+Safe zone : keep the action inside the central 90% (phones crop slightly).
+LOOK      : warm early-morning gold, red soil, marigold/magenta/teal sarees,
+            joyful teamwork.
+Alt text  : Villagers planting native tree saplings in a row on village
+            common land
+
+PROMPT >>>
+Editorial documentary photograph of about ten villagers planting native tree saplings in a long row on village common land in warm early-morning light: women in bright cotton sarees (marigold, magenta, teal) and men in checked shirts and lungis with white towels on their shoulders, saplings in black polybags beside freshly dug pits in rich red soil, a woman pouring water from a steel pot into a pit and laughing with the woman next to her, a man mid-swing with a spade, two children carrying small saplings and grinning, long shadows and glowing dust in the low golden sunlight, the row of planters leading the eye toward a rocky hill and a lone neem tree, people absorbed in the work and not looking at the camera, wide shot from slightly above eye level. Full-frame camera, 35mm lens, f/5.6, beautiful natural light, rich natural colours with a gentle warm grade, fine film grain, candid but beautifully composed, no text.
+
+WATCH FOR : the spade and the pouring pot (physically believable); repeated
+            faces along the row; saplings that look identical - vary them.
+
+
+------------------------------------------------------------------------------
+IMAGE 03 of 19  -  SOLUTIONS ACCORDION, ITEM 2
+------------------------------------------------------------------------------
+Name      : home-solutions-natural-farming.jpg
+Section   : HOME > "Rural Transformation Solutions..." > accordion item 2
+            "Natural & Sacred Agriculture"
+Shown as  : Same large photo slot as image 02, swaps when item 2 is opened.
+Replaces  : Unsplash photo-1592982537447
+Shape     : 3:2 landscape. Generate 1800 x 1200.
+Safe zone : farmer and plant inside the central 80%.
+LOOK      : dewy green leaves, golden backlight, creamy blur, calm pride.
+Alt text  : A farmer checking the leaves of a healthy cotton crop
+
+PROMPT >>>
+Medium editorial documentary photograph of a middle-aged Telugu farmer with a grey moustache, in a clean faded checked shirt with a white towel on his shoulder, crouching between rows of lush healthy cotton plants and gently turning a leaf to check it, his hand partly hidden behind the leaf, dew drops on the leaves, dried crop residue mulch on the dark soil, a blue drum and steel bucket softly blurred at the field edge, warm golden morning light from behind him creating a rim glow on his moustache and shoulders, creamy shallow depth of field, a calm look of focus and quiet satisfaction, not looking at the camera. 50mm lens, f/2.8, natural skin texture with pores and lines, rich natural colours with a gentle warm grade, Kodak Portra 400 look, fine film grain, no text.
+
+WATCH FOR : fingers on the leaf (keep them hidden or inpaint); the cotton
+            plant should look like cotton (bolls, lobed leaves), not a
+            generic bush.
+
+
+------------------------------------------------------------------------------
+IMAGE 04 of 19  -  SOLUTIONS ACCORDION, ITEM 3
+------------------------------------------------------------------------------
+Name      : home-solutions-health-learning.jpg
+Section   : HOME > "Rural Transformation Solutions..." > accordion item 3
+            "Holistic Health & Rural Education"
+Shown as  : Same large photo slot, swaps when item 3 is opened.
+Replaces  : Unsplash photo-1589923188900 (this one photo is also used in the
+            "Empowerment" tab today; image 09 replaces that use)
+Shape     : 3:2 landscape. Generate 1800 x 1200.
+Safe zone : central 90%.
+LOOK      : dappled golden light through leaves, colourful sarees, friendly
+            laughter.
+Alt text  : A health worker talking with village women and schoolchildren
+            under a neem tree
+
+PROMPT >>>
+Editorial documentary photograph of a village health and learning session under a big neem tree in the courtyard of a whitewashed community hall: an ASHA health worker in a cotton saree with a cloth shoulder bag and a clipboard sits on a low stool talking warmly with a group of women in colourful sarees seated on jute mats, one woman laughing, a young mother holding a toddler on her hip, three schoolchildren in navy-and-white uniforms at the edge with slates, tulsi and aloe vera plants in clay pots along a low wall, steel tumblers and a bicycle in the background, golden dappled light filtering through the neem leaves, candid mixed expressions - listening, chatting, smiling, one looking away, well composed with a clear focal point on the health worker. 35mm lens, f/4, beautiful natural light, rich natural colours with a gentle warm grade, fine film grain, no legible text on any poster or board.
+
+WATCH FOR : toddler's hands and feet; steel tumblers and pots; faces of the
+            three children (not siblings-by-clone); any poster text.
+
+
+------------------------------------------------------------------------------
+IMAGE 05 of 19  -  SOLUTIONS ACCORDION, ITEM 4
+------------------------------------------------------------------------------
+Name      : home-solutions-tank-desilting.jpg
+Section   : HOME > "Rural Transformation Solutions..." > accordion item 4
+            "Parampara & Water Stewardship"
+Shown as  : Same large photo slot, swaps when item 4 is opened.
+Replaces  : Unsplash photo-1500937386664
+Shape     : 3:2 landscape. Generate 1800 x 1200.
+Safe zone : central 90%.
+LOOK      : late-afternoon gold, glowing red dust, long shadows, energetic
+            community effort.
+Alt text  : Villagers desilting a traditional village tank in the dry season
+
+PROMPT >>>
+Wide editorial documentary photograph of villagers desilting a traditional village tank (chervu) in the dry season in warm late-afternoon light: men and women carrying baskets of dark silt on their heads and shoulders in a long line across the tank bed to a tractor trolley on the bund, worn footpaths in the dried mud leading the eye, a shallow pool reflecting a golden sky in one corner, an old stone-and-earth bund with a banyan tree and a tiny roadside shrine, women in bright cotton sarees with cloths over their heads, glowing red dust hanging in the low sun, long shadows, an energetic, hopeful community effort. 28mm lens, f/8, beautiful natural light, rich natural colours with a gentle warm grade, fine film grain, candid but beautifully composed, no text.
+
+WATCH FOR : baskets balanced on heads correctly; the tractor trolley shape;
+            cracked mud should look like real drying mud, not tiles.
+
+
+------------------------------------------------------------------------------
+IMAGE 06 of 19  -  HOW IT WORKS, TAB 1
+------------------------------------------------------------------------------
+Name      : home-how-village-overview.jpg
+Section   : HOME > "Village Transformation Made Simple and Sustainable"
+            > tab 1 "Overview - Village Ecosystem"
+            (badge on the photo, bottom-left: "120+ Villages, India")
+Shown as  : Big banner photo under the four tabs; this is the photo shown
+            when the page loads.
+Replaces  : farmer-landscape.jpg - a PORTRAIT file (1600 x 2400) that gets
+            cropped hard into this wide banner.
+Shape     : 16:9. Generate 2560 x 1440, export 2400 x 1350. Shown ~1240 px
+            wide and ~520-580 px tall on desktop; on phones only the centre
+            ~45% of the width is visible.
+Safe zone : main subject inside the central 45% width and 75% height.
+            Keep the bottom-left corner uncluttered (the badge sits there).
+LOOK      : golden-hour glow on roofs and tank, deep greens, leading lines
+            of lanes and bunds.
+Alt text  : Aerial view of a Telangana village with tiled roofs, a temple, a
+            tank and green fields
+
+PROMPT >>>
+Aerial editorial photograph from about 100 metres above a Telangana village at golden hour: compact lanes of whitewashed and ochre houses with red country-tile and flat concrete roofs, a small temple with a saffron flag beside a huge banyan tree, a village tank glowing gold, a patchwork of lush green paddy, cotton and ploughed red-brown fields with earthen bunds leading the eye, cattle tracks, a tractor on a dirt road, scattered palm and tamarind trees, layered blue granite hills in soft warm haze, long warm shadows and side light. Shot on a drone camera with a 24mm-equivalent lens, rich natural colours with a gentle warm grade, natural contrast with no HDR halos, slight lens vignetting, fine grain, no text.
+
+WATCH FOR : roads that lead nowhere or loop impossibly; houses melting into
+            each other; too-perfect field patterns. Fix or regenerate.
+
+
+------------------------------------------------------------------------------
+IMAGE 07 of 19  -  HOW IT WORKS, TAB 2
+------------------------------------------------------------------------------
+Name      : home-how-check-dam.jpg
+Section   : HOME > "Village Transformation Made Simple..." > tab 2
+            "Foundation - Soil & Water"
+            (badge: "Telangana & Karnataka Watersheds")
+Shown as  : Same banner slot as image 06.
+Replaces  : soil-water.jpg (1200 x 800; it is also reused on the Tradition &
+            Culture page, which now gets its own image 19)
+Shape     : 16:9. Generate 2560 x 1440, export 2400 x 1350.
+Safe zone : main subjects in the central 45% width and 75% height; keep the
+            bottom-left corner calm.
+LOOK      : fresh post-rain greens, sun breaking through dramatic clouds,
+            sparkling water on the spillway.
+Alt text  : Water spilling over a check dam on a hillside stream after rain,
+            with two farmers on the bund
+
+PROMPT >>>
+Wide editorial documentary photograph of a stone-and-cement check dam across a seasonal stream on a Deccan hillside just after rain: clear water spilling over the low wall and glistening where sunlight breaks through the clouds, dark wet soil, fresh vivid green grass, contour trenches on the slope behind, granite boulders, two farmers in shirts and lungis standing proudly on the bund, one holding a handful of dark soil in his palm while the other points at the water level, young trees, soft golden light breaking through dramatic monsoon clouds, low angle from the streambed with the wall as a leading line. 24mm lens, f/8, beautiful natural light, rich natural colours with a gentle cool-green grade, fine film grain, candid but beautifully composed, no text.
+
+WATCH FOR : the dam wall should be a plain engineered wall, not a waterfall;
+            water must flow downhill; the handful of soil in the palm.
+
+
+------------------------------------------------------------------------------
+IMAGE 08 of 19  -  HOW IT WORKS, TAB 3
+------------------------------------------------------------------------------
+Name      : home-how-natural-farming-field.jpg
+Section   : HOME > "Village Transformation Made Simple..." > tab 3
+            "Natural Farming - Zero Chemical"
+            (badge: "Organic Crop Demonstration Acres")
+Shown as  : Same banner slot as image 06.
+Replaces  : Unsplash photo-1595974482597
+Shape     : 16:9. Generate 2560 x 1440, export 2400 x 1350.
+Safe zone : central 45% width / 75% height; bottom-left corner calm.
+LOOK      : lush deep greens against golden backlight, glowing dust, magenta
+            saree and marigold border as colour accents.
+Alt text  : A farming couple harvesting green gram in a multi-layered natural
+            farming field
+
+PROMPT >>>
+Wide editorial documentary photograph of a multi-layered natural farming field in golden late-afternoon light: rows of pearl millet and pigeon pea with a border of blooming marigolds and a few papaya trees, mulched soil between the rows leading the eye into the distance, a farmer and his wife (she in a magenta cotton saree tucked at the waist) harvesting green gram together, bending over the plants with their backs to the camera, a white desi cow tied under a mango tree, bamboo baskets and jute sacks at the field edge, warm backlight with glowing dust and gentle haze, natural work postures, lush deep greens against golden light. 35mm lens, f/8, beautiful natural light, rich natural colours with a gentle warm grade, fine film grain, candid but beautifully composed, no text.
+
+WATCH FOR : the different crops must look like themselves (millet ear heads,
+            pigeon pea pods); cow's legs and rope; the couple's proportions.
+
+
+------------------------------------------------------------------------------
+IMAGE 09 of 19  -  HOW IT WORKS, TAB 4
+------------------------------------------------------------------------------
+Name      : home-how-gram-panchayat.jpg
+Section   : HOME > "Village Transformation Made Simple..." > tab 4
+            "Empowerment - Health & Education"
+            (badge: "Rural Gram Panchayats")
+Shown as  : Same banner slot as image 06.
+Replaces  : Unsplash photo-1589923188900 (same photo as image 04's old one)
+Shape     : 16:9. Generate 2560 x 1440, export 2400 x 1350.
+Safe zone : the speaker and front row inside the central 45% width; bottom-
+            left corner calm.
+LOOK      : warm light through tree leaves, colourful sarees, engaged smiling
+            faces, a confident woman leader.
+Alt text  : A woman sarpanch addressing a Gram Panchayat meeting held in the
+            shade of a large tree
+
+PROMPT >>>
+Editorial documentary photograph of a Gram Panchayat community meeting outside a modest whitewashed panchayat building: around thirty villagers on plastic chairs and jute mats in the dappled shade of a large tree, a confident woman sarpanch in a cotton saree speaking with a folder in her hand, women from a self-help group in the front row taking notes and smiling, elders with white towels over their shoulders listening, a few children peeking from behind a wall, warm mid-morning light with golden highlights through the leaves, varied candid expressions - attentive, smiling, amused - people at different distances so faces are not repeated, clear focal point on the speaker, no readable text on any banner. 35mm lens, f/4, beautiful natural light, rich natural colours with a gentle warm grade, fine film grain.
+
+WATCH FOR : crowds are where AI clones faces. Keep faces small or turned, and
+            regenerate if two people look identical.
+
+
+------------------------------------------------------------------------------
+IMAGE 10 of 19  -  FIVE PILLARS, CENTRE PICTURE
+------------------------------------------------------------------------------
+Name      : home-pillars-thriving-village.jpg
+Section   : HOME > "Five Pillars. One Mission." > the round picture in the
+            middle of the five cards (text over it: "THRIVING VILLAGES - A
+            HEALTHIER, GREENER TOMORROW"). On phones/tablets it becomes a wide
+            banner above the card list. Also on the /pillars page.
+Replaces  : thriving-village-center.jpg (1024 x 1024 square)
+Shape     : 16:10. Generate 2000 x 1250, export 1600 x 1000. On desktop it is
+            cut to a 360 px CIRCLE, so the scene must survive a circular crop.
+Safe zone : all important content inside a circle whose diameter equals the
+            image height, centred. Dark text is laid over the middle, so avoid
+            tiny critical details there.
+LOOK      : abundant green, glowing cumulus clouds, warm haze, bright sarees.
+Alt text  : Thriving green village with a winding stream, traditional homes
+            and distant hills
+
+PROMPT >>>
+Gentle editorial landscape photograph of a thriving green Telangana village after a good monsoon at golden hour, centred composition: a small perennial stream winding past red-tiled houses, coconut and mango groves, lush green paddy terraces, women in bright sarees washing clothes on the stone steps at the stream's edge, a farmer with a bullock cart on the path, two schoolchildren with cloth bags crossing a small footbridge, layered blue hills and glowing cumulus clouds beyond, warm hazy light, calm sky at the top. The main scene sits in the middle of the frame so it survives a circular crop. 35mm lens, f/8, beautiful natural light, rich natural colours with a gentle warm grade, fine film grain, candid but beautifully composed, no text.
+
+WATCH FOR : a stream that flows believably; footbridge and bullock cart
+            geometry; keep the scene small and quiet, not a postcard.
+
+
+------------------------------------------------------------------------------
+IMAGES 11 - 15  -  THE FIVE PILLAR PICTURES  (each appears in 3 places)
+------------------------------------------------------------------------------
+Each pillar picture is used:
+  (a) as a small portrait card on HOME > "Five Pillars. One Mission."
+      (about 110 x 130 px on desktop, ~100 px square on phones)
+  (b) the same card on the /pillars page
+  (c) as the wide banner at the top of its own page /pillars/<name>
+      (about 960 px wide, ratio 2:1)
+Because of that, generate each one as 3:2 (2400 x 1600) with the SUBJECT IN
+THE CENTRE: inside the central 50% of the width and central 70% of the
+height. It then crops cleanly to the tall card and to the wide banner.
+Use the file names exactly as written: pillar-forestation.jpg etc. are the
+names the site already loads on the pillar pages, so your new files replace
+the old ones there immediately.
+
+------------------------------------------------------------------------------
+IMAGE 11 of 19  -  PILLAR 01 FORESTATION
+------------------------------------------------------------------------------
+Name      : pillar-forestation.jpg
+Section   : HOME > Five Pillars card 01 | /pillars card 01 |
+            /pillars/forestation top banner | also the tiny round photo in
+            HOME > "Our Belief"
+Replaces  : nature-restore.jpg (cards, Belief photo, About page, share image)
+            and the old pillar-forestation.jpg (800 x 458, soft at this size)
+Shape     : 3:2. Generate 2400 x 1600. Subject centred.
+LOOK      : early gold light, rich red soil, warm smiles across generations.
+Alt text  : A woman and an elder planting a native sapling in red soil while a
+            boy holds a pot of water
+
+PROMPT >>>
+Editorial documentary photograph of a young woman in a marigold-yellow cotton saree and an elderly man in a white shirt and dhoti kneeling side by side beside a freshly dug pit in rich red soil, placing a native sapling into it, both smiling gently at the sapling, a small boy standing behind them grinning and holding a steel pot of water, their hands partly hidden by the sapling and soil, a row of other saplings with bamboo tree guards stretching behind them, warm early-morning golden side light with a rim glow on their hair, fine soil dust on their clothes, seen from a three-quarter angle. Main subjects in the centre of the frame. 50mm lens, f/4, beautiful natural light, natural skin texture, rich natural colours with a gentle warm grade, Kodak Portra 400 look, fine film grain, no text.
+
+WATCH FOR : hands on the sapling (this is the usual failure); the boy's grip
+            on the pot; the elder's dhoti wrap.
+
+------------------------------------------------------------------------------
+IMAGE 12 of 19  -  PILLAR 02 WATER HARVESTING
+------------------------------------------------------------------------------
+Name      : pillar-water.jpg
+Section   : HOME > Five Pillars card 02 | /pillars card 02 |
+            /pillars/water-harvesting top banner
+Replaces  : water-harvesting-cascade.jpg (a tropical WATERFALL - not a village
+            scene) and the old pillar-water.jpg (800 x 533)
+Shape     : 3:2. Generate 2400 x 1600. Subject centred.
+LOOK      : sparkling water, bright cumulus sky, teal saree against fresh
+            green rows, calm smile.
+Alt text  : A woman opening a hand-dug channel to carry pond water into her
+            vegetable rows
+
+PROMPT >>>
+Editorial documentary photograph of a barefoot woman in a teal cotton saree hitched above her ankles guiding water from a farm pond along a small hand-dug channel into her vegetable rows, using a spade to open a gap in the mud bank, a calm smile on her face, reeds and a black buffalo standing in shallow water behind her, brass and plastic pots on the bund, lush green vegetable plots with brinjal and chilli, bright post-monsoon sky with white cumulus clouds, sparkling reflections in the water, warm afternoon side light, a little mud on her feet and saree. Main action in the centre of the frame. 35mm lens, f/5.6, beautiful natural light, rich natural colours with a gentle warm grade, fine film grain, candid but beautifully composed, no text.
+
+WATCH FOR : the spade and her grip on it; water direction along the channel;
+            reflections that match the sky; brinjal and chilli plants.
+
+------------------------------------------------------------------------------
+IMAGE 13 of 19  -  PILLAR 03 AGRICULTURE
+------------------------------------------------------------------------------
+Name      : pillar-agriculture.jpg
+Section   : HOME > Five Pillars card 03 | /pillars card 03 |
+            /pillars/agriculture top banner
+Replaces  : agriculture-farmer-crop.jpg (card) and the old
+            pillar-agriculture.jpg (only 800 x 334 - very soft on the banner)
+Shape     : 3:2. Generate 2400 x 1600. Face and bundle centred.
+LOOK      : the emotional portrait of the set - golden backlight, bright eyes,
+            a real laugh, creamy blur.
+Alt text  : An elderly woman farmer laughing softly, holding freshly harvested
+            sorghum ears in a golden field
+
+PROMPT >>>
+Environmental portrait of an elderly Telugu woman farmer with deep laugh lines and a warm, genuine laugh, in a faded indigo cotton saree with a cloth wrapped over her head, holding a bundle of freshly harvested sorghum (jowar) ears against her chest in a golden field, looking slightly off-camera at someone speaking to her, soft golden late-afternoon backlight with a warm rim glow on her hair and bright catchlights in her eyes, shallow depth of field, the golden field and a neem tree melting into creamy blur behind her, natural skin texture with pores and wrinkles. Face and bundle in the centre of the frame. 85mm lens, f/2, beautiful natural light, rich natural colours with a gentle warm grade, Kodak Portra 400 look, fine film grain, no text.
+
+WATCH FOR : eyes and teeth (most likely to look fake); the sorghum heads
+            (round, dense grain clusters); saree edge at the head.
+
+------------------------------------------------------------------------------
+IMAGE 14 of 19  -  PILLAR 04 EDUCATION
+------------------------------------------------------------------------------
+Name      : pillar-education.jpg
+Section   : HOME > Five Pillars card 04 | /pillars card 04 |
+            /pillars/education top banner
+Replaces  : the old pillar-education.jpg (800 x 532)
+Shape     : 3:2. Generate 2400 x 1600. Girl and desk centred.
+LOOK      : golden window light stripes, teal walls, a faint smile of
+            concentration.
+Alt text  : A schoolgirl writing in her notebook in a government primary
+            school classroom
+
+PROMPT >>>
+Editorial documentary photograph inside a government primary school classroom in a Telangana village: a girl of about ten in a navy skirt and white shirt with two neat oiled braids tied with red ribbons writes in a notebook at a worn wooden bench with a faint smile of concentration, golden stripes of sunlight coming through barred windows across the desk and lighting her face, classmates sitting on floor mats softly out of focus behind her, a teacher in a cotton saree bending to help another child, teal-blue walls with peeling paint, a cloth school bag hanging from a nail, a blackboard with chalk marks but no readable words. The girl is absorbed in her work, not looking at the camera. Main subject in the centre. 50mm lens, f/2.8, beautiful natural window light, rich natural colours with a gentle warm grade, fine film grain.
+
+WATCH FOR : the writing hand and pencil; uniform details (a real school
+            uniform has a consistent pattern); blackboard must stay blank.
+
+------------------------------------------------------------------------------
+IMAGE 15 of 19  -  PILLAR 05 HEALTH
+------------------------------------------------------------------------------
+Name      : pillar-health.jpg
+Section   : HOME > Five Pillars card 05 | /pillars card 05 |
+            /pillars/health top banner
+Replaces  : the old pillar-health.jpg (800 x 930, portrait, cropped hard into
+            the wide banner)
+Shape     : 3:2. Generate 2400 x 1600. Group centred.
+LOOK      : glowing sunrise backlight, mist, rim-lit silhouettes with calm
+            faces, all ages together.
+Alt text  : Villagers of all ages doing yoga on jute mats at sunrise on the
+            village common ground
+
+PROMPT >>>
+Editorial documentary photograph of a community yoga session at sunrise on a village common ground: about fifteen villagers, from teenagers to people in their seventies, in simple bright cotton clothes, standing on jute mats spread on packed earth in a slow standing pose with arms raised, calm peaceful faces, a yoga teacher in a white kurta leading at the front, a banyan tree and a small temple tower silhouetted behind, glowing golden backlight with mist and drifting dust, rim light on hair and shoulders, people in different postures and at different distances so nobody is a copy of anybody. Main group in the centre of the frame. 28mm lens, f/5.6, beautiful natural light, rich natural colours with a gentle warm grade, fine film grain, candid but beautifully composed, no text.
+
+WATCH FOR : raised arms and hands (count fingers); people who are all in the
+            identical pose; body proportions in the back rows.
+
+
+------------------------------------------------------------------------------
+IMAGE 16 of 19  -  PARAMPARA STRIP
+------------------------------------------------------------------------------
+Name      : home-parampara-elder-and-youth.jpg
+Section   : HOME > "Ancient Wisdom. Contemporary Responsibility." (the strip
+            after the impact numbers; photo on the left, text on the right)
+Shown as  : Rounded photo, about 480-560 px wide, ratio 4:3. Button below it:
+            "Read Our Philosophy".
+Replaces  : farmer-landscape.jpg (the same portrait file also used in image
+            06's slot today)
+Shape     : 4:3. Generate 1600 x 1200, export 1400 x 1050.
+Safe zone : central 85%.
+LOOK      : golden-hour warmth, two generations sharing a smile over seeds.
+Alt text  : An elderly farmer showing heirloom millet seeds to a young
+            agriculture graduate with a tablet
+
+PROMPT >>>
+Editorial documentary photograph of an elderly farmer with a white moustache in a clean white dhoti and shirt, sitting cross-legged on a field bund with a handful of heirloom millet seeds in his open palm, explaining something to a young agriculture graduate in jeans and a checked shirt who kneels beside him holding a tablet showing a blurred chart (screen glare, no readable interface), both men smiling gently and looking at the seeds rather than the camera, a golden millet field in soft focus behind, warm golden-hour light with a soft rim on their shoulders, warm respectful body language across two generations. 35mm lens, f/4, beautiful natural light, rich natural colours with a gentle warm grade, Kodak Portra 400 look, fine film grain, no text.
+
+WATCH FOR : the seeds in the palm (should read as grain, not pebbles); the
+            tablet screen; the elder's crossed legs and dhoti drape.
+
+
+------------------------------------------------------------------------------
+IMAGE 17 of 19  -  FOOTER BACKGROUND (EVERY PAGE)
+------------------------------------------------------------------------------
+Name      : site-footer-background.jpg
+Section   : HOME > very bottom, behind "Help Build an Entire Ecosystem, Not
+            Just a Single Project." and the white link card. The same footer
+            appears at the bottom of EVERY page.
+Shown as  : Full-width background photo. The top of it fades into white; a
+            white card and dark green text sit on top.
+Replaces  : footerbg.png (1376 x 768, a 1.7 MB PNG stretched to full width)
+Shape     : 16:9 wide. Generate 2560 x 1440, export 2560 x 1440 as JPEG
+            (under 500 KB - quiet pastel images compress very well).
+Safe zone : NO focal subject at all. Top third = soft pale sky (it fades to
+            white). Low contrast, no bright highlights, calm centre.
+LOOK      : soft peach-and-blue dawn, pastel greens, misty and peaceful.
+Alt text  : (none - purely decorative)
+
+PROMPT >>>
+Serene wide landscape of a Deccan village valley in the early morning: pale hazy peach-and-blue sky filling the top third, soft blue hills, gently rolling green fields with crop rows leading toward the middle distance, a line of coconut palms, a far-off cluster of red tiled roofs, a dirt path with a tiny farmer and bullock cart barely visible, thin ground mist glowing in the first light. Low contrast, pastel greens and warm cream light, no strong subject and no bright highlights anywhere, plenty of quiet empty space because a white card and text will sit on top. 50mm lens, f/8, beautiful natural light, rich natural pastel colours, fine film grain, no text.
+
+WATCH FOR : nothing bright or busy near the centre; no people close up.
+
+
+==============================================================================
+PART B - ABOUT PAGE  ( /about )
+==============================================================================
+
+------------------------------------------------------------------------------
+IMAGE 18 of 19  -  ABOUT PAGE TOP BANNER
+------------------------------------------------------------------------------
+Name      : about-hero-village-dusk.jpg
+Section   : ABOUT > "Who We Are" > the large rounded picture under the
+            heading. The quote "To provide Clean Air, Clean Water and Clean
+            Food to society..." is written over the bottom of the picture in
+            white.
+Shown as  : Wide banner (about 1000 px wide, ratio 16:7 on desktop, 16:9 on
+            tablets, tall 3:4 on phones where only the centre is visible).
+Replaces  : nature-restore.jpg (1200 x 687)
+Shape     : 16:9. Generate 2560 x 1440, export 2400 x 1350.
+Safe zone : subjects in the central 40% of the width (the phone crop). The
+            bottom third must be DARK and calm so the white quote is readable.
+LOOK      : glowing "cow-dust hour", backlit dust, bright sarees, rim-lit
+            horns, dark foreground for the quote.
+Alt text  : Buffaloes and goats returning home along a dusty village lane at
+            golden hour
+
+PROMPT >>>
+Wide editorial documentary photograph of 'cow-dust hour' at the edge of a Telangana village: a herd of buffaloes and goats walks home along a red dirt lane, raising glowing golden dust, a herder in a cotton head cloth carrying a stick, two women in bright sarees returning from the fields with bundles of fodder on their heads, village houses, a temple flag and palm trees in the distance, strong warm backlight through the dust with a glowing rim on the animals' horns. The lower third of the frame is a shadowed foreground of dark path and dry grass, giving a dark base for white text. 40mm lens, f/5.6, beautiful natural light, rich natural colours with a gentle warm grade, fine film grain, candid but beautifully composed, no text.
+
+WATCH FOR : animal legs and horns (buffalo vs cow); the herd should not be
+            copies of one animal; dust should look soft, not like smoke.
+
+
+==============================================================================
+PART C - TRADITION & CULTURE PAGE  ( /tradition-culture )
+==============================================================================
+
+------------------------------------------------------------------------------
+IMAGE 19 of 19  -  TRADITION & CULTURE TOP BANNER
+------------------------------------------------------------------------------
+Name      : tradition-hero-bullock-ploughing.jpg
+Section   : TRADITION & CULTURE > the wide picture under "Tradition & Culture"
+            and its intro paragraph. Darkens toward the bottom.
+Shown as  : Wide banner, about 960 px wide, ratio 2:1.
+Replaces  : soil-water.jpg (the same file that is used in Home tab 2 today)
+Shape     : 16:9. Generate 2560 x 1440, export 2400 x 1350. Subject centred.
+Safe zone : main subjects in the central 70% height; bottom edge dark/calm.
+LOOK      : dawn mist, gold rim light on horns and dust, rich red soil, timeless.
+Alt text  : A farmer ploughing a red-soil field with a pair of bullocks at
+            dawn while egrets follow
+
+PROMPT >>>
+Editorial documentary photograph at dawn of a farmer in a white dhoti and cotton head cloth ploughing a small red-soil field with a wooden plough pulled by a pair of bullocks, seen from the side, white egrets following in the fresh furrow, thin glowing mist above the field, the sun rising behind a neem tree with a golden rim of light on the bullocks' horns and the dust, no tractor or modern machinery in frame, quiet timeless mood, rich red soil against soft green and gold. Wide 35mm lens, f/8, beautiful natural light, rich natural colours with a gentle warm grade, fine film grain, candid but beautifully composed, no text.
+
+WATCH FOR : the yoke and plough must connect logically to the bullocks;
+            four bullock legs, not five; the farmer's grip on the plough.
+
+ALTERNATIVE CONCEPT (if this feels too "postcard"): three generations of
+women in bright sarees winnowing millet in a courtyard with bamboo trays,
+late-afternoon golden side light, grain and chaff floating in the air, faces
+looking down at the work with gentle smiles.
+
+
+==============================================================================
+PART D - SLOTS THAT MUST NOT BE AI-GENERATED
+==============================================================================
+ - LOGO and BROWSER-TAB ICON (public/images/bppflogo.png, src/app/icon.png):
+   the real brand artwork. Never regenerate or "redraw" it with AI.
+ - LEADERSHIP CARDS (About page): currently coloured initials. If you add
+   photos, use real portraits of the real people, with their consent.
+ - "STORIES FROM THE FIELD" (Home; removed): only real, consented, named
+   villagers with real photos. No AI people here, ever.
+ - DONATION QR CODE (Participate page, "coming soon"): generate the real UPI /
+   bank QR code from BPPF's account. Not an AI image.
+ - Pages with no photos today: Approach (the map is a drawing), Adopt a
+   Village, Impact, Participate, Transparency, Contact, the 6-step model and
+   the FAQ on Home. Nothing to generate.
+
+
+==============================================================================
+PART E - QUICK MAP: FILE NAME -> WHERE IT IS USED
+==============================================================================
+ 01  home-hero-poster.jpg               Home > Hero (video poster) + share preview
+ 02  home-solutions-tree-planting.jpg   Home > Solutions accordion, item 1
+ 03  home-solutions-natural-farming.jpg Home > Solutions accordion, item 2
+ 04  home-solutions-health-learning.jpg Home > Solutions accordion, item 3
+ 05  home-solutions-tank-desilting.jpg  Home > Solutions accordion, item 4
+ 06  home-how-village-overview.jpg      Home > How It Works, tab 1 Overview
+ 07  home-how-check-dam.jpg             Home > How It Works, tab 2 Foundation
+ 08  home-how-natural-farming-field.jpg Home > How It Works, tab 3 Natural Farming
+ 09  home-how-gram-panchayat.jpg        Home > How It Works, tab 4 Empowerment
+ 10  home-pillars-thriving-village.jpg  Home + /pillars > Five Pillars centre
+ 11  pillar-forestation.jpg             Home + /pillars card 01; /pillars/forestation;
+                                        Home > "Our Belief" tiny photo
+ 12  pillar-water.jpg                   Home + /pillars card 02; /pillars/water-harvesting
+ 13  pillar-agriculture.jpg             Home + /pillars card 03; /pillars/agriculture
+ 14  pillar-education.jpg               Home + /pillars card 04; /pillars/education
+ 15  pillar-health.jpg                  Home + /pillars card 05; /pillars/health
+ 16  home-parampara-elder-and-youth.jpg Home > "Ancient Wisdom. Contemporary
+                                        Responsibility." strip
+ 17  site-footer-background.jpg         Footer on every page
+ 18  about-hero-village-dusk.jpg        About > top banner with the quote
+ 19  tradition-hero-bullock-ploughing.jpg  Tradition & Culture > top banner
+
+
+==============================================================================
+PART F - AFTER YOU GENERATE: HOW TO HAND THE FILES OVER
+==============================================================================
+ 0. STATUS: all 18 photos and the hero video were delivered in
+    public/final-images/ and are already wired into the site. The site
+    serves optimised WebP copies made from those masters (same base names,
+    .webp extension). Masters are git-ignored. If you replace a photo, give it
+    a NEW file name, because the site's image cache is keyed by file name.
+ 1. (Original instructions) Save every finished image into  public/images/
+    using the exact file names above. Put the hero poster in the same folder.
+ 2. Tell Claude: "wire the images". It will:
+      - point Solutions and How It Works at the new local files (they
+        currently load 5 photos from Unsplash, another website),
+      - point the five Pillars cards, the Parampara strip, the footer and the
+        About and Tradition pages at the new files,
+      - add the hero poster and set the share-preview picture,
+      - delete the old files that are no longer used:
+        agriculture-farmer-crop.jpg, farmer-landscape.jpg, footerbg.png,
+        nature-restore.jpg, soil-water.jpg, thriving-village-center.jpg,
+        water-harvesting-cascade.jpg,
+      - remove the Unsplash permission from the site configuration,
+      - rebuild and re-test every page, including image sizes and the phone
+        crops.
+ 3. Replace AI images with real BPPF photographs whenever you can. Keep the
+    file names the same and nothing else needs to change.
+==============================================================================
+END OF FILE
+==============================================================================

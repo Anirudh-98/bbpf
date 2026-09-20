@@ -8,16 +8,29 @@ import { navLinks } from "@/data/site";
 
 export default function Nav() {
   const pathname = usePathname();
-  const [open, setOpen] = useState(false);
+  // Remember which page the menu was opened on, so it closes by itself on any route change
+  // (including browser back/forward), not only when one of its links is clicked.
+  const [openOnPath, setOpenOnPath] = useState<string | null>(null);
+  const open = openOnPath === pathname;
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
-    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (!open) return;
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpenOnPath(null);
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [open]);
 
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
@@ -33,7 +46,7 @@ export default function Nav() {
         {/* Brand Logo & Name */}
         <Link href="/" className="flex items-center gap-2.5 pl-1 group">
           <Image
-            src="/bppflogo.png"
+            src="/images/bppflogo.png"
             alt="BPPF Logo"
             width={573}
             height={502}
@@ -47,7 +60,7 @@ export default function Nav() {
           </div>
         </Link>
 
-        {/* Center Pill Segmented Nav Bar (Frame 00:00) */}
+        {/* Center Pill Segmented Nav Bar */}
         <nav className="hidden items-center gap-1 rounded-full border border-white/20 bg-white/10 p-1 backdrop-blur-md lg:flex shadow-inner">
           {navLinks.map((link) => {
             const active = isActive(link.href);
@@ -81,7 +94,8 @@ export default function Nav() {
             type="button"
             aria-label="Toggle menu"
             aria-expanded={open}
-            onClick={() => setOpen((v) => !v)}
+            aria-controls="mobile-menu"
+            onClick={() => setOpenOnPath(open ? null : pathname)}
             className="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-md transition-colors hover:bg-white/25 lg:hidden"
           >
             <span className="sr-only">Menu</span>
@@ -105,7 +119,10 @@ export default function Nav() {
 
       {/* Mobile Drawer */}
       {open && (
-        <div className="mx-auto mt-2 max-w-content rounded-3xl border border-white/20 bg-forest-deep/95 p-4 shadow-lifted backdrop-blur-xl lg:hidden">
+        <div
+          id="mobile-menu"
+          className="mx-auto mt-2 max-w-content rounded-3xl border border-white/20 bg-forest-deep/95 p-4 shadow-lifted backdrop-blur-xl lg:hidden"
+        >
           <nav className="flex flex-col gap-1.5">
             {navLinks.map((link) => {
               const active = isActive(link.href);
@@ -113,7 +130,7 @@ export default function Nav() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  onClick={() => setOpen(false)}
+                  onClick={() => setOpenOnPath(null)}
                   className={
                     active
                       ? "rounded-2xl bg-white px-4 py-3 text-sm font-bold text-charcoal"
@@ -127,7 +144,7 @@ export default function Nav() {
 
             <Link
               href="/contact"
-              onClick={() => setOpen(false)}
+              onClick={() => setOpenOnPath(null)}
               className="mt-2 flex items-center justify-center rounded-2xl bg-lime px-4 py-3 text-sm font-bold text-forest-deep shadow-sm transition-all hover:bg-lime-light active:scale-[0.98]"
             >
               Contact Us

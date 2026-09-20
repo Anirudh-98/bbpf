@@ -111,8 +111,8 @@ export default function AboutPage() {
 
           <Reveal delay={0.1} className="relative mx-auto mt-12 aspect-[3/4] w-full max-w-5xl overflow-hidden rounded-[2.5rem] border border-stone-200/80 shadow-lifted sm:aspect-[16/9] md:aspect-[16/7]">
             <Image
-              src="/images/nature-restore.jpg"
-              alt="BPPF village landscape"
+              src="/images/about-hero-village-dusk.webp"
+              alt="Buffaloes and goats returning home along a dusty village lane at golden hour"
               fill
               sizes="(max-width: 1024px) 100vw, 1024px"
               className="object-cover"
@@ -154,7 +154,7 @@ export default function AboutPage() {
                   className="group relative flex flex-col gap-3.5 rounded-3xl border border-stone-200/80 bg-white p-7 shadow-soft transition-all duration-300 hover:border-stone-300 hover:shadow-card hover:-translate-y-1"
                 >
                   <div className="flex items-center justify-between">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-lime/20 text-forest shadow-xs">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-lime/20 text-forest">
                       <Icon className="h-5 w-5" strokeWidth={1.75} />
                     </span>
                     <span className="text-xs font-semibold text-stone-400 uppercase tracking-wider">

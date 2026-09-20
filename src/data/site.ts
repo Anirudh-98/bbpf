@@ -29,15 +29,25 @@ export const bankDetails = {
   micr: "500240037",
 };
 
-export const contactInfo = {
+type SocialLink = { label: string; href: string };
+
+export const contactInfo: {
+  email: string;
+  website: string;
+  youtube: SocialLink;
+  instagram: SocialLink;
+  /** Add BPPF's Facebook page here, e.g. { label: "Facebook", href: "https://www.facebook.com/..." }. Hidden while unset. */
+  facebook?: SocialLink;
+  cin: string;
+  /** WhatsApp chat number: country code + number, digits only (wa.me format). */
+  whatsappNumber: string;
+} = {
   email: "bppf.fou@gmail.com",
   website: "www.bppfindia.org",
   youtube: { label: "@Bppfindia", href: "https://www.youtube.com/@Bppfindia" },
   instagram: { label: "@indiabppf", href: "https://www.instagram.com/indiabppf" },
-  facebook: { label: "Facebook", href: "#" },
   cin: "U85300TG2022NPL167836",
-  // TODO: replace with BPPF's real WhatsApp business number (include country code, digits only).
-  whatsappNumber: "919999999999",
+  whatsappNumber: "918977007978", // +91 89770 07978
 };
 
 export const siteUrl = "https://www.bppfindia.org";

@@ -15,10 +15,10 @@ function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-function LinkedinIcon(props: React.SVGProps<SVGSVGElement>) {
+function YoutubeIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" {...props}>
-      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z" />
+      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
     </svg>
   );
 }
@@ -31,24 +31,18 @@ function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-function TwitterIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" {...props}>
-      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-    </svg>
-  );
-}
+const socialLinkClass =
+  "flex h-9 w-9 items-center justify-center rounded-xl bg-stone-100 text-stone-700 hover:bg-lime hover:text-forest-deep transition-all";
 
 export default function Footer() {
   return (
     <footer className="relative w-full overflow-hidden pt-20 pb-16 sm:pt-28 sm:pb-24">
-      {/* Background Image: public/footerbg.png */}
+      {/* Background image */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/footerbg.png"
-          alt="Field background"
+          src="/images/site-footer-background.webp"
+          alt=""
           fill
-          priority
           sizes="100vw"
           className="object-cover object-center"
         />
@@ -57,7 +51,7 @@ export default function Footer() {
       </div>
 
       <div className="container-content relative z-10">
-        {/* Top CTA Block on Background Image (Matching Reference Picture) */}
+        {/* Top CTA Block on Background Image */}
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-forest leading-[1.15]">
             Help Build an Entire Ecosystem, <br />
@@ -72,7 +66,7 @@ export default function Footer() {
 
           <div className="mt-7 flex justify-center">
             <Link
-              href="/adopt-a-village"
+              href="/contact"
               className="rounded-full bg-[#183a27] hover:bg-[#112a1c] text-white px-8 py-3.5 text-sm font-semibold shadow-md transition-all active:scale-95"
             >
               Contact Us
@@ -80,14 +74,14 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Floating White Card sitting on the scenic field (Matching Reference Picture) */}
+        {/* Floating White Card sitting on the scenic field */}
         <div className="relative mx-auto mt-16 sm:mt-24 max-w-7xl rounded-[32px] sm:rounded-[40px] bg-white/95 backdrop-blur-md p-8 sm:p-12 shadow-[0_25px_60px_rgba(0,0,0,0.18)] border border-white/80 ring-1 ring-white/60">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-5">
             {/* Brand & Mission Column */}
             <div className="lg:col-span-2">
               <Link href="/" className="flex items-center gap-3">
                 <Image
-                  src="/bppflogo.png"
+                  src="/images/bppflogo.png"
                   alt="BPPF Logo"
                   width={56}
                   height={56}
@@ -108,7 +102,7 @@ export default function Footer() {
               <div className="mt-5">
                 <a
                   href={`mailto:${contactInfo.email}`}
-                  className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white px-4 py-2 text-xs font-medium text-stone-700 shadow-xs hover:border-stone-300 transition-colors"
+                  className="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white px-4 py-2 text-xs font-medium text-stone-700 hover:border-stone-300 transition-colors"
                 >
                   <Mail className="h-3.5 w-3.5 text-stone-500" />
                   <span>{contactInfo.email}</span>
@@ -119,41 +113,34 @@ export default function Footer() {
               <div className="mt-6">
                 <p className="text-xs font-bold text-stone-700">Social Media</p>
                 <div className="mt-3 flex items-center gap-2">
-                  <a
-                    href={contactInfo.facebook.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Facebook"
-                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-stone-100 text-stone-700 hover:bg-lime hover:text-forest-deep transition-all shadow-xs"
-                  >
-                    <FacebookIcon />
-                  </a>
+                  {contactInfo.facebook && (
+                    <a
+                      href={contactInfo.facebook.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="BPPF on Facebook"
+                      className={socialLinkClass}
+                    >
+                      <FacebookIcon />
+                    </a>
+                  )}
                   <a
                     href={contactInfo.youtube.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="LinkedIn / YouTube"
-                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-stone-100 text-stone-700 hover:bg-lime hover:text-forest-deep transition-all shadow-xs"
+                    aria-label="BPPF on YouTube"
+                    className={socialLinkClass}
                   >
-                    <LinkedinIcon />
+                    <YoutubeIcon />
                   </a>
                   <a
                     href={contactInfo.instagram.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Instagram"
-                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-stone-100 text-stone-700 hover:bg-lime hover:text-forest-deep transition-all shadow-xs"
+                    aria-label="BPPF on Instagram"
+                    className={socialLinkClass}
                   >
                     <InstagramIcon />
-                  </a>
-                  <a
-                    href={contactInfo.youtube.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Twitter / X"
-                    className="flex h-9 w-9 items-center justify-center rounded-xl bg-stone-100 text-stone-700 hover:bg-lime hover:text-forest-deep transition-all shadow-xs"
-                  >
-                    <TwitterIcon />
                   </a>
                 </div>
               </div>
@@ -242,7 +229,7 @@ export default function Footer() {
 
           {/* Bottom Bar Divider */}
           <div className="mt-10 sm:mt-12 flex flex-col items-center gap-4 border-t border-stone-200/80 pt-6 text-center text-xs text-stone-500 sm:flex-row sm:justify-between sm:text-left">
-            <p>© 2026 Bharathiya Parampara Prathistan Foundation. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Bharathiya Parampara Prathistan Foundation. All rights reserved.</p>
             <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-stone-500">
               <Link href="/transparency" className="whitespace-nowrap hover:text-forest transition-colors">
                 Terms of Service
