@@ -18,11 +18,11 @@ export default function HeroSection() {
           loop
           playsInline
           aria-hidden="true"
-          poster="/images/home-hero-poster.jpg"
+          poster="/images/hero-poster.jpg"
           onCanPlay={() => window.dispatchEvent(new Event("hero-video-ready"))}
           className="h-full w-full object-cover object-center"
         >
-          <source src="/videos/home-hero-video.mp4" type="video/mp4" />
+          <source src="/videos/hero-video.mp4" type="video/mp4" />
         </video>
         {/* Balanced gradient: keeps video footage clear while ensuring text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/35 to-transparent" />

@@ -46,7 +46,7 @@ Until the three contact-form variables are set, the form tells visitors it is un
 
 - `src/app/` has one route per sitemap page, plus `api/contact` (form delivery), `error.tsx` / `global-error.tsx` and `not-found.tsx`.
 - `src/components/` holds shared building blocks.
-- `src/data/` holds pillar content and site-wide constants (nav links, bank details, contact info). Add the Facebook page URL to `contactInfo.facebook` in `src/data/site.ts` and the icon and contact row appear automatically.
+- `src/data/` holds pillar content and site-wide constants (nav links, bank details, contact info). The social links (Facebook, YouTube, Instagram) live in `contactInfo`; the footer icons and the contact-page rows read from there, and the Facebook one disappears if you remove `contactInfo.facebook`.
 - `src/lib/contact.ts` holds the contact-form rules shared by the form and the API route.
 
 ## Content that still needs real data

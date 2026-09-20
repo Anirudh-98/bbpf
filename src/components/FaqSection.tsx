@@ -5,28 +5,28 @@ import Reveal from "./Reveal";
 const faqItems: AccordionItem[] = [
   {
     number: "01",
-    title: "How does the BPPF Adopt a Village model work?",
-    body: "Adopt a Village brings together soil restoration, water harvesting, 50,000 tree plantations, education, and healthcare into one coordinated 6-step transformation program. Rather than piecemeal charity, it creates an enduring, economically self-sustaining rural ecosystem.",
+    title: "Can this change be achieved?",
+    body: "Yes. It can be achieved through humanitarian principles, knowledge, wisdom, and transparency in all aspects. By working together, individuals, communities, and stakeholders can restore ecosystems, reverse deforestation, and create a greener and healthier future for villages.",
   },
   {
     number: "02",
-    title: "What makes BPPF's natural farming approach different from conventional methods?",
-    body: "We combine indigenous agricultural wisdom (Parampara) with scientific ecological monitoring. Farmers are guided away from toxic and expensive chemical fertilizers towards biological bio-inputs and multi-layer cropping that restore topsoil biodiversity and lower farm expenditure.",
+    title: "How does the BPPF Adopt a Village model work?",
+    body: "An individual or group can adopt a village by investing around ₹10 lakhs for its complete development over a 5–6 year period. The work is carried out through knowledge, technology, and innovative ideas, combined with traditional and experienced agricultural principles.",
   },
   {
     number: "03",
     title: "How are trees selected for the 50,000 plantation per village?",
-    body: "We prioritize native and endemic tree varieties suited to the local climate, soil chemistry, and water availability. This includes a mix of fruit-bearing trees, medicinal plants, canopy shade trees, and nitrogen-fixing species that directly benefit the local fauna and human community.",
+    body: "Trees are selected based on local environmental conditions, soil suitability, water availability, and the needs of the community. The focus is on indigenous and fruit-bearing species that can support biodiversity, improve green cover, and provide long-term benefits to farmers and villages.",
   },
   {
     number: "04",
     title: "Is BPPF an officially registered non-profit organization?",
-    body: "Yes, Bharathiya Parampara Prathistan Foundation is incorporated as a Section 8 Company under the Ministry of Corporate Affairs, Government of India (CIN: U85300TG2022NPL167836). All initiatives adhere to strict governance, audit, and transparency standards.",
+    body: "Yes, Bharathiya Parampara Prathistan Foundation is incorporated as a MCA Registered under Section 8 Company under the Ministry of Corporate Affairs, Government of India (CIN: U85300TG2022NPL167836). All initiatives adhere to strict governance, audit, and transparency standards.",
   },
   {
     number: "05",
     title: "Can individuals or corporations partner for CSR initiatives?",
-    body: "Absolutely. BPPF works actively with CSR partners, philanthropists, and individuals seeking verified, measurable rural impact across climate action, water security, farmer livelihoods, and rural education.",
+    body: "Yes. Individuals and organizations can participate in the village development model by supporting projects through adoption, funding, CSR initiatives, and community-led programs. Contributions can support activities such as water restoration, tree plantation, agriculture, education, and overall village development.",
   },
 ];
 

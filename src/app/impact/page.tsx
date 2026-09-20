@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const stats: Stat[] = [
-  { value: "120+", label: "Villages with Forestation Efforts", verified: true },
+  { value: "12000", label: "Villages with Forestation Efforts", verified: true },
   { value: "—", label: "Villages Engaged" },
   { value: "—", label: "Farmers Supported" },
   { value: "—", label: "Trees Planted" },

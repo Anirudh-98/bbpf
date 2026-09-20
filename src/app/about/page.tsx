@@ -57,7 +57,7 @@ const visionPoints = [
 
 const leadership = [
   {
-    name: "Kosaraju Shiva Koti Ram",
+    name: "Kosaraju Siva Koti Ram",
     role: "Founder & Chairman",
     bio: "Visionary leader driving sustainable development and cultural preservation through agricultural innovation.",
   },
@@ -114,7 +114,7 @@ export default function AboutPage() {
               src="/images/about-hero-village-dusk.webp"
               alt="Buffaloes and goats returning home along a dusty village lane at golden hour"
               fill
-              sizes="(max-width: 1024px) 100vw, 1024px"
+              sizes="(max-width: 640px) 160vw, (max-width: 1024px) 100vw, 1024px"
               className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
@@ -223,7 +223,7 @@ export default function AboutPage() {
               <LeadershipCard key={leader.name} {...leader} />
             ))}
           </Reveal>
-          
+
         </div>
       </section>
     </>

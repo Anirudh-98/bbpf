@@ -275,7 +275,8 @@ export default function FivePillarsSection({
                   src="/images/home-pillars-thriving-village.webp"
                   alt="Thriving green village with a stream, red-tiled homes and distant hills"
                   fill
-                  sizes="360px"
+                  sizes="480px"
+                  quality={85}
                   className="object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
                 />
 
@@ -334,7 +335,8 @@ export default function FivePillarsSection({
                           src={pillar.image}
                           alt={pillar.alt}
                           fill
-                          sizes="110px"
+                          sizes="195px"
+                          quality={85}
                           className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                         />
                       </div>
@@ -373,7 +375,8 @@ export default function FivePillarsSection({
                           src={pillar.image}
                           alt={pillar.alt}
                           fill
-                          sizes="110px"
+                          sizes="195px"
+                          quality={85}
                           className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                         />
                       </div>
@@ -427,7 +430,8 @@ export default function FivePillarsSection({
                         src={pillar.image}
                         alt={pillar.alt}
                         fill
-                        sizes="112px"
+                        sizes="(min-width: 640px) 170px, 145px"
+                        quality={85}
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                     </div>

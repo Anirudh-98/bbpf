@@ -11,8 +11,8 @@ const solutions = [
     id: "ecological",
     icon: Trees,
     title: "Proven Ecological Restoration",
-    desc: "Countering deforestation and reviving biodiversity by planting up to 50,000 indigenous trees per village across 120+ rural communities.",
-    bullets: "Increases tree cover, improves local air quality, and creates lasting micro-climates for villages.",
+    desc: "Converting deforestation into thriving green ecosystems by planting up to 30,000 fruit-bearing trees per village across 12,000+ rural communities.",
+    bullets: "Restoring biodiversity, increasing tree cover, and creating healthier, climate-resilient micro-climates for villages.",
     image: "/images/home-solutions-tree-planting.webp",
     alt: "Villagers planting rice seedlings by hand in a flooded field",
   },
@@ -63,7 +63,7 @@ export default function InteractiveSolutions() {
           </div>
           <p className="max-w-md text-sm md:text-base leading-relaxed text-stone-600">
             Our integrated rural model helps villages thrive sustainably by
-            restoring natural ecology, revitalizing farming, and empowering
+            restoring natural eco-system, revitalizing farming, and empowering
             generations of community members.
           </p>
         </Reveal>

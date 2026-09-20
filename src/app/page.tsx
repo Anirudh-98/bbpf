@@ -52,7 +52,7 @@ const steps = [
 ];
 
 const homeStats: Stat[] = [
-  { value: "120+", label: "Villages with Forestation Efforts", verified: true },
+  { value: "12000", label: "Villages with Forestation Efforts", verified: true },
   { value: "50,000", label: "Trees / Village Target", verified: true },
   { value: "5 Pillars", label: "Integrated Transformation Model", verified: true },
   { value: "100%", label: "Section 8 Non-Profit Governance", verified: true },
@@ -68,7 +68,7 @@ export default function HomePage() {
       <div className="border-b border-stone-200/80 bg-stone-100/70 py-4">
         <div className="container-content flex flex-wrap items-center justify-between gap-4 text-xs font-semibold text-stone-600">
           <span className="text-stone-400 uppercase tracking-wider text-[11px]">
-            Trusted by 120+ villages across India
+            Trusted by 12000 villages across India
           </span>
           <div className="flex flex-wrap items-center gap-6 md:gap-10">
             <span className="flex items-center gap-1.5">
@@ -124,7 +124,7 @@ export default function HomePage() {
             {/* Styled Pull-Quote */}
             <div className="mt-12 rounded-3xl border border-stone-200/80 bg-stone-50/90 p-8 sm:p-10 shadow-soft">
               <blockquote className="font-serif text-xl sm:text-2xl md:text-3xl italic leading-snug text-forest-light">
-                &ldquo;Restore the land. Restore the water. Restore agriculture.
+                &ldquo;Restore the land. Restore water. Restore agriculture.
                 Strengthen communities. Preserve culture. Build self-reliant
                 villages.&rdquo;
               </blockquote>

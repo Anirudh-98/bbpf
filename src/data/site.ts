@@ -36,7 +36,7 @@ export const contactInfo: {
   website: string;
   youtube: SocialLink;
   instagram: SocialLink;
-  /** Add BPPF's Facebook page here, e.g. { label: "Facebook", href: "https://www.facebook.com/..." }. Hidden while unset. */
+  /** BPPF's Facebook page. The footer icon and the contact-page row appear only while this is set. */
   facebook?: SocialLink;
   cin: string;
   /** WhatsApp chat number: country code + number, digits only (wa.me format). */
@@ -50,6 +50,7 @@ export const contactInfo: {
   website: "www.bppfindia.org",
   youtube: { label: "@Bppfindia", href: "https://www.youtube.com/@Bppfindia" },
   instagram: { label: "@indiabppf", href: "https://www.instagram.com/indiabppf" },
+  facebook: { label: "Facebook", href: "https://www.facebook.com/share/1DZgUhJUs8/" },
   cin: "U85300TG2022NPL167836",
   whatsappNumber: "918977007978", // +91 89770 07978
 };
