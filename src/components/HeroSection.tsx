@@ -9,7 +9,7 @@ const MotionLink = motion.create(Link);
 
 export default function HeroSection() {
   return (
-    <section className="relative isolate -mt-20 w-full overflow-hidden bg-stone-950 pb-8 pt-28 sm:pb-12 sm:pt-36 text-white min-h-[660px] md:min-h-[740px] lg:min-h-[820px] flex flex-col justify-between">
+    <section className="relative isolate -mt-20 w-full overflow-hidden bg-stone-950 pb-8 pt-28 sm:pb-10 sm:pt-32 text-white min-h-screen min-h-[100dvh] flex flex-col justify-between">
       {/* Cinematic looping video background */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <video
@@ -30,7 +30,7 @@ export default function HeroSection() {
       </div>
 
       {/* Main Hero Content */}
-      <div className="container-content relative z-10 pt-6 sm:pt-12">
+      <div className="container-content relative z-10 my-auto py-6 sm:py-8">
         <div className="max-w-2xl lg:max-w-3xl">
           {/* 3-Line Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.08]">
@@ -71,7 +71,7 @@ export default function HeroSection() {
       </div>
 
       {/* Bottom Bar: SCROLL indicator on left & Animated numbers on right */}
-      <div className="container-content relative z-10 mt-16 sm:mt-24">
+      <div className="container-content relative z-10 mt-auto pt-4">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 border-t border-white/20 pt-6">
           {/* SCROLL indicator */}
           <a
