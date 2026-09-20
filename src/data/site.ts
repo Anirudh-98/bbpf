@@ -41,8 +41,12 @@ export const contactInfo: {
   cin: string;
   /** WhatsApp chat number: country code + number, digits only (wa.me format). */
   whatsappNumber: string;
+  phone: string;
+  phoneDisplay: string;
 } = {
   email: "bppf.fou@gmail.com",
+  phone: "+918977007978",
+  phoneDisplay: "+91 89770 07978",
   website: "www.bppfindia.org",
   youtube: { label: "@Bppfindia", href: "https://www.youtube.com/@Bppfindia" },
   instagram: { label: "@indiabppf", href: "https://www.instagram.com/indiabppf" },

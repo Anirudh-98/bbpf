@@ -231,6 +231,7 @@ export default function Footer() {
           <div className="mt-10 sm:mt-12 flex flex-col items-center gap-4 border-t border-stone-200/80 pt-6 text-center text-xs text-stone-500 sm:flex-row sm:justify-between sm:text-left">
             <p>© {new Date().getFullYear()} Bharathiya Parampara Prathistan Foundation. All rights reserved.</p>
             <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-stone-500">
+              {/* Terms of Service & Privacy Policy commented out for now until dedicated pages are published
               <Link href="/transparency" className="whitespace-nowrap hover:text-forest transition-colors">
                 Terms of Service
               </Link>
@@ -239,6 +240,7 @@ export default function Footer() {
                 Privacy Policy
               </Link>
               <span className="hidden sm:inline">•</span>
+              */}
               <span className="whitespace-nowrap">CIN: {contactInfo.cin}</span>
             </div>
           </div>

@@ -66,7 +66,7 @@ export default function HomePage() {
 
       {/* Micro-Trust Ticker Strip */}
       <div className="border-b border-stone-200/80 bg-stone-100/70 py-4">
-        <Reveal className="container-content flex flex-wrap items-center justify-between gap-4 text-xs font-semibold text-stone-600">
+        <div className="container-content flex flex-wrap items-center justify-between gap-4 text-xs font-semibold text-stone-600">
           <span className="text-stone-400 uppercase tracking-wider text-[11px]">
             Trusted by 120+ villages across India
           </span>
@@ -88,7 +88,7 @@ export default function HomePage() {
               Zero Chemical Agriculture
             </span>
           </div>
-        </Reveal>
+        </div>
       </div>
 
       {/* The Core Idea / Statement with Inline Photo Badge */}

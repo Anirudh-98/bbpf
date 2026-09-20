@@ -46,6 +46,17 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-xs font-bold uppercase tracking-wide text-stone-400">
+                  Phone
+                </p>
+                <a
+                  href={`tel:${contactInfo.phone}`}
+                  className="font-medium text-forest hover:text-forest-light"
+                >
+                  {contactInfo.phoneDisplay}
+                </a>
+              </div>
+              <div>
+                <p className="text-xs font-bold uppercase tracking-wide text-stone-400">
                   Website
                 </p>
                 <p>{contactInfo.website}</p>
