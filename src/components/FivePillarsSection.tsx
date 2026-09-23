@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -143,6 +143,30 @@ const PILLARS: PillarData[] = [
   },
 ];
 
+// The desktop diagram is drawn on a fixed 1200 x 780 canvas. Instead of a fixed shrink factor
+// (which pushed the side cards off screen anywhere between 1024 and 1279px), measure the space
+// that is really available and scale the canvas to fit it. That covers small laptops, Windows
+// display scaling (125-150%) and browser zoom.
+const CANVAS_WIDTH = 1200;
+const CANVAS_HEIGHT = 780;
+
+function useFitScale(canvasWidth: number) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [scale, setScale] = useState(1);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new ResizeObserver(([entry]) => {
+      setScale(Math.min(1, entry.contentRect.width / canvasWidth));
+    });
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [canvasWidth]);
+
+  return { ref, scale };
+}
+
 interface FivePillarsSectionProps {
   asH1?: boolean;
   eyebrow?: string;
@@ -155,6 +179,7 @@ export default function FivePillarsSection({
   className = "",
 }: FivePillarsSectionProps) {
   const [activePillarId, setActivePillarId] = useState<string | null>(null);
+  const { ref: fitRef, scale } = useFitScale(CANVAS_WIDTH);
 
   const HeadingTag = asH1 ? "h1" : "h2";
 
@@ -186,8 +211,13 @@ export default function FivePillarsSection({
         </Reveal>
 
         {/* DESKTOP INTERACTIVE PILLARS SYSTEM (>= 1024px) */}
-        <div className="hidden lg:block mt-16 xl:mt-20">
-          <div className="relative mx-auto w-[1200px] h-[780px] max-w-full origin-top scale-[0.84] xl:scale-100 transition-transform duration-300">
+        <div ref={fitRef} className="hidden lg:block mx-auto mt-16 w-full max-w-[1200px] xl:mt-20">
+          {/* Reserves the scaled size; the fixed canvas is scaled from its top-left corner into it. */}
+          <div style={{ width: CANVAS_WIDTH * scale, height: CANVAS_HEIGHT * scale }} className="mx-auto">
+          <div
+            className="relative origin-top-left"
+            style={{ width: CANVAS_WIDTH, height: CANVAS_HEIGHT, transform: `scale(${scale})` }}
+          >
             {/* SVG Connector Lines and Orbit Rings */}
             <svg
               className="pointer-events-none absolute inset-0 z-0 h-full w-full"
@@ -385,6 +415,7 @@ export default function FivePillarsSection({
                 </div>
               );
             })}
+          </div>
           </div>
         </div>
 

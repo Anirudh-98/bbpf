@@ -15,7 +15,7 @@ const tabs = [
     icon: Layers,
     image: "/images/home-how-village-overview.webp",
     alt: "Aerial view of a village with tiled roofs, a tank and green fields at golden hour",
-    location: "12000 Villages, India",
+    location: "12000+ Villages, India",
   },
   {
     id: "foundation",
@@ -134,7 +134,7 @@ export default function InteractiveHowItWorks() {
         <Reveal className="mt-8 grid grid-cols-2 gap-y-6 sm:grid-cols-4 rounded-3xl border border-stone-200/80 bg-white p-6 md:p-8 shadow-soft divide-stone-200/80 sm:divide-x">
           <div className="flex flex-col items-center px-4 text-center">
             <AnimatedStatValue
-              value="12000"
+              value="12000+"
               className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-forest"
             />
             <span className="mt-1 text-xs md:text-sm font-semibold text-stone-600">

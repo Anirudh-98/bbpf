@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      // Added on top of Tailwind's defaults (sm 640, md 768, lg 1024, xl 1280, 2xl 1536), not replacing them.
+      screens: {
+        // Landscape phones and other very short windows: lets the hero tighten up so its buttons stay on screen.
+        short: { raw: "(max-height: 520px)" },
+      },
       colors: {
         lime: {
           DEFAULT: "#9EE839",

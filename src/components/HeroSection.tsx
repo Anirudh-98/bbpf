@@ -9,7 +9,7 @@ const MotionLink = motion.create(Link);
 
 export default function HeroSection() {
   return (
-    <section className="relative isolate -mt-20 w-full overflow-hidden bg-stone-950 pb-8 pt-28 sm:pb-10 sm:pt-32 text-white min-h-screen min-h-[100dvh] flex flex-col justify-between">
+    <section className="relative isolate -mt-20 w-full overflow-hidden bg-stone-950 pb-8 pt-28 sm:pb-10 sm:pt-32 short:pb-4 short:pt-20 text-white min-h-screen min-h-[100dvh] flex flex-col justify-between">
       {/* Cinematic looping video background */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <video
@@ -30,23 +30,23 @@ export default function HeroSection() {
       </div>
 
       {/* Main Hero Content */}
-      <div className="container-content relative z-10 my-auto py-6 sm:py-8">
+      <div className="container-content relative z-10 my-auto py-6 sm:py-8 short:py-2">
         <div className="max-w-2xl lg:max-w-3xl">
           {/* 3-Line Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.08]">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl short:text-3xl font-extrabold tracking-tight text-white leading-[1.08]">
             Boost Productivity <br />
             with Smarter Farming <br />
             Solutions
           </h1>
 
           {/* Subtitle */}
-          <p className="mt-5 max-w-xl text-sm sm:text-base md:text-lg text-white/90 leading-relaxed font-normal">
+          <p className="mt-5 short:mt-2 max-w-xl text-sm sm:text-base md:text-lg short:text-sm text-white/90 leading-relaxed font-normal">
             Leveraging technology and traditional wisdom to help rural communities
             grow more, waste less, and work smarter.
           </p>
 
           {/* CTA Buttons */}
-          <div className="mt-8 flex flex-wrap items-center gap-3.5">
+          <div className="mt-8 short:mt-4 flex flex-wrap items-center gap-3.5">
             <MotionLink
               href="/approach"
               whileHover={{ scale: 1.04 }}
@@ -71,8 +71,8 @@ export default function HeroSection() {
       </div>
 
       {/* Bottom Bar: SCROLL indicator on left & Animated numbers on right */}
-      <div className="container-content relative z-10 mt-auto pt-4">
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 border-t border-white/20 pt-6">
+      <div className="container-content relative z-10 mt-auto pt-4 short:pt-2">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 border-t border-white/20 pt-6 short:gap-3 short:pt-3">
           {/* SCROLL indicator */}
           <a
             href="#solutions"
@@ -95,7 +95,7 @@ export default function HeroSection() {
                 "yield improvement" are still pending verification, so they must not appear here. */}
             <div className="flex flex-col">
               <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-lime">
-                <AnimatedStatCounter target={120} suffix="+" />
+                <AnimatedStatCounter target={12000} suffix="+" />
               </div>
               <span className="mt-1 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-stone-300">
                 Villages with Forestation
@@ -125,3 +125,4 @@ export default function HeroSection() {
     </section>
   );
 }
+   
